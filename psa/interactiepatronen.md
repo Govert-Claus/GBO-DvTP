@@ -26,6 +26,7 @@ Het vaststellen van de identiteit van een actor (bijv. burger of organisatie) vo
 ### Interactie
 
 <figure>
+
 ``` mermaid
 sequenceDiagram
 actor Burger
@@ -44,6 +45,7 @@ TI ->> AUTH: Controle toegangsregels
 AUTH ->> TI: Toegang toegestaan
 TI ->> PD: Authenticatie geslaagd
 ```
+
 <figcaption>Interactiepatroon identificatie en authenticatie actor</figcaption>
 </figure>
 
@@ -72,6 +74,7 @@ Een burger geeft expliciete toestemming voor het delen van een specifieke datase
 ### Interactie
 
 <figure>
+
 ``` mermaid
 sequenceDiagram
 actor Burger
@@ -92,6 +95,7 @@ CONSENT ->> REG: Registreer toestemming
 REG ->> CONSENT: Bevestiging
 CONSENT ->> PD: Terugkoppeling resultaat
 ```
+
 <figcaption>Interactiepatroon toestemming geven</figcaption>
 </figure>
 
@@ -118,6 +122,7 @@ De burger kan een eerder gegeven toestemming bekijken en intrekken.
 ### Interactie
 
 <figure>
+
 ``` mermaid
 sequenceDiagram
 actor Burger
@@ -136,6 +141,7 @@ CONSENT ->> REG: Update status (geannuleerd)
 REG ->> CONSENT: Bevestiging
 CONSENT ->> Burger: Intrekking bevestigd
 ```
+
 <figcaption>Interactiepatroon toestemming intrekken</figcaption>
 </figure>
 
@@ -165,6 +171,7 @@ Een private dienstverlener haalt gegevens op bij een bronhouder op basis van een
 ### Interactie
 
 <figure>
+
 ``` mermaid
 sequenceDiagram
 participant PD as Private dienstverlener
@@ -181,5 +188,6 @@ INT ->> BRON: Gegevensverzoek
 BRON ->> INT: Gegevens (met bronzegel)
 INT ->> PD: Lever gegevens
 ```
+
 <figcaption>Interactiepatroon gegevensverzoek</figcaption>
 </figure>

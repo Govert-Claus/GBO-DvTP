@@ -8,6 +8,7 @@ De generieke functies uit het logisch architectuurmodel worden mogelik gemaakt m
 In de onderstaande diagram zijn de benodigde capabilities per generieke functie geschetst.
 
 <figure>
+
 ```mermaid
 
 flowchart LR
@@ -114,6 +115,7 @@ GOV --> SEM
 GOV --> ORCH
 
 ```
+
 <figcaption>Generieke functies met capabilities</figcaption>
 </figure>
 

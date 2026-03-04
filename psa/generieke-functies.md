@@ -25,6 +25,7 @@ Uit de interactiepatronen en het capability model blijken de volgende generieke 
 Het logische architectuurdiagram schetst de generieke functies ten opzichte van elkaar.
 
 <figure>
+
 ```mermaid
 
 flowchart LR
@@ -47,5 +48,6 @@ ORCH --> DATA
 OPS --> ORCH
 
 ```
+
 <figcaption>Logisch architectuurdiagram</figcaption>
 </figure>
