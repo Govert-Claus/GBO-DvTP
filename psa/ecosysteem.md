@@ -17,11 +17,11 @@ Uitwerking van rollen:
 
 In de contextdiagram worden de actoren ten opzichte van elkaar en van het DvTP/GBO stelsel geschetst.
 
+<div class="mermaid" data-include="../diagrammen/context-diagram.mmd"></div>
+
 <figure>
 
 ```mermaid
-
-<div class="mermaid">
 
 flowchart LR
 
@@ -36,8 +36,6 @@ Bronhouder --> DvTP
 DvTP --> Wallet
 DvTP --> Privaat
 DvTP --> SDG
-
-</div>
 
 ```
 
