@@ -2,7 +2,7 @@
 
 Dit document beschrijft de belangrijkste interactiepatronen voor DvTP zoals afgeleid uit de functionele requirements. De patronen zijn bedoeld voor gebruik in de PSA en zijn daarom **logisch (technologie‑onafhankelijk)** beschreven.
 
-------------------------------------------------------------------------
+
 
 ## Identificatie en authenticatie van een actor
 
@@ -49,7 +49,7 @@ TI ->> PD: Authenticatie geslaagd
 <figcaption>Interactiepatroon identificatie en authenticatie actor</figcaption>
 </figure>
 
-------------------------------------------------------------------------
+
 
 ## Toestemming geven en registreren
 
@@ -99,7 +99,7 @@ CONSENT ->> PD: Terugkoppeling resultaat
 <figcaption>Interactiepatroon toestemming geven</figcaption>
 </figure>
 
-------------------------------------------------------------------------
+
 
 ## Toestemming beheren of intrekken
 
@@ -145,7 +145,7 @@ CONSENT ->> Burger: Intrekking bevestigd
 <figcaption>Interactiepatroon toestemming intrekken</figcaption>
 </figure>
 
-------------------------------------------------------------------------
+
 
 ## Gegevensverzoek van afnemer naar bronhouder
 

@@ -18,7 +18,7 @@ Uit de interactiepatronen en het capability model blijken de volgende generieke 
 (hier mist "Logging & Verantwoording" dat vaak in architecturen specifieke aandacht krijgt. Hier lijkt dat impliciet in "Beheer & Continuïteit" te zitten, maar moet misschien expliciet gemaakt worden)
 
 
-------------------------------------------------------------------------
+
 
 ## Logisch architectuurdiagram
 

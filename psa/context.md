@@ -9,7 +9,7 @@ Beschrijving van:
 - digitale overheid
 - rol van wallets
 
-------------------------------------------------------------------------
+
 
 ## Huidige situatie
 
@@ -21,7 +21,7 @@ Beschrijving van:
 
 (zie probleemomschrijving in Beleidskompas)
 
-------------------------------------------------------------------------
+
 
 ## Probleemstelling
 
@@ -40,7 +40,7 @@ Beschrijving van:
 
 Welke problemen lost DvTP/GBO op?
 
-------------------------------------------------------------------------
+
 
 ## Doelstelling
 

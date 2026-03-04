@@ -1,3 +1,6 @@
+
+
+
 # Inleiding
 
 ## Doel van dit document
@@ -5,33 +8,39 @@
 Dit document beschrijft de Project Start Architectuur (PSA) voor het
 programma **DvTP/GBO**.
 
-De PSA beschrijft: - de doelstelling van de oplossing - de context
-waarin de oplossing opereert - de architectuurprincipes en kaders - de
-benodigde generieke functies en capabilities - de beoogde logische
-architectuur
+De PSA beschrijft:  
+- de doelstelling van de oplossing  
+- de context waarin de oplossing opereert  
+- de use cases waarop de PSA is gebaseerd  
+- de interactiepatronen die de oplossing moet ondersteunen  
+- de architectuurprincipes en kaders  
+- de beoogde logische architectuur
+- de benodigde generieke functies en capabilities  
+- de architectuurkaders die voor de technische uitwerking gelden  
+- een realisatiestrategie  
+- nog openstaande vragen  
 
-De PSA beschrijft **wat de oplossing moet kunnen**, maar legt nog geen
-technische implementatie vast.
+De PSA beschrijft **wat de oplossing moet kunnen**, maar legt nog geen technische implementatie vast.
 
-------------------------------------------------------------------------
 
 ## Scope
 
-De PSA beschrijft de architectuur voor een generieke infrastructuur
-waarmee:
+De PSA beschrijft de architectuur voor een generieke infrastructuur waarmee:
 
 -   burgers gegevens van overheidsorganisaties kunnen verkrijgen
 -   burgers deze gegevens kunnen delen met private partijen
--   gegevens gebruikt kunnen worden voor Europese toepassingen zoals
-    **EDI Wallet** en **SDG/OOTS**
+-   gegevens gebruikt kunnen worden voor Europese toepassingen zoals **EDI Wallet** en **SDG/OOTS**
 
-De PSA omvat: - het afsprakenstelsel - generieke functies -
-capabilities - architectuurkaders
+De PSA omvat:
+- generieke functies  
+- capabilities  
+- architectuurkaders  
 
-De PSA beschrijft nog niet: - concrete technische oplossingen -
-implementaties van componenten - leverancierskeuzes
+De PSA beschrijft niet:  
+- concrete technische oplossingen  
+- implementaties van componenten  
+- leverancierskeuzes  
 
-------------------------------------------------------------------------
 
 ## Relatie met andere architecturen
 
@@ -45,6 +54,7 @@ De PSA sluit aan bij:
 -   Federatief Datastelsel
 -   ...
 
+
 # Context en aanleiding
 
 ## Beleidscontext
@@ -56,7 +66,7 @@ Beschrijving van:
 - digitale overheid
 - rol van wallets
 
-------------------------------------------------------------------------
+
 
 ## Huidige situatie
 
@@ -68,7 +78,7 @@ Beschrijving van:
 
 (zie probleemomschrijving in Beleidskompas)
 
-------------------------------------------------------------------------
+
 
 ## Probleemstelling
 
@@ -87,7 +97,7 @@ Beschrijving van:
 
 Welke problemen lost DvTP/GBO op?
 
-------------------------------------------------------------------------
+
 
 ## Doelstelling
 
@@ -96,6 +106,7 @@ Welke problemen lost DvTP/GBO op?
 - private dienstverleners alleen gegevens opvragen binnen de afgesproken reikwijdte en de burger terugkoppelen welke gegevens zijn ontvangen en gebruikt;
 
 - bronhouders alleen verstrekken na verificatie van een geldig verzoek en binnen een afgebakend doel, met waarborgen voor integriteit en herleidbaarheid.
+
 
 # Ecosysteem en rollen
 
@@ -110,7 +121,7 @@ Uitwerking van rollen:
 -   DvTP/GBO stelsel
 -   Governance organisatie
 
-------------------------------------------------------------------------
+
 
 ## Contextdiagram
 
@@ -139,6 +150,7 @@ DvTP --> SDG
 <figcaption>Contextdiagram</figcaption>
 </figure>
 
+
 # Use cases
 
 Use cases helpen bepalen welke capabilities nodig zijn.
@@ -147,29 +159,27 @@ Use cases helpen bepalen welke capabilities nodig zijn.
 
 Beschrijving van het scenario.
 
-------------------------------------------------------------------------
+
 
 ## Use case: LVG
 
 Beschrijving van het scenario.
 
-------------------------------------------------------------------------
+
 
 ## Use case: Vullen van de EDI Wallet
 
 Beschrijving.
 
-------------------------------------------------------------------------
 
 ## Use case: Gebruik in SDG/OOTS
 
 Beschrijving.
 
+
 # Interactiepatronen DvTP (PSA)
 
 Dit document beschrijft de belangrijkste interactiepatronen voor DvTP zoals afgeleid uit de functionele requirements. De patronen zijn bedoeld voor gebruik in de PSA en zijn daarom **logisch (technologie‑onafhankelijk)** beschreven.
-
-------------------------------------------------------------------------
 
 ## Identificatie en authenticatie van een actor
 
@@ -216,7 +226,7 @@ TI ->> PD: Authenticatie geslaagd
 <figcaption>Interactiepatroon identificatie en authenticatie actor</figcaption>
 </figure>
 
-------------------------------------------------------------------------
+
 
 ## Toestemming geven en registreren
 
@@ -266,7 +276,7 @@ CONSENT ->> PD: Terugkoppeling resultaat
 <figcaption>Interactiepatroon toestemming geven</figcaption>
 </figure>
 
-------------------------------------------------------------------------
+
 
 ## Toestemming beheren of intrekken
 
@@ -312,7 +322,7 @@ CONSENT ->> Burger: Intrekking bevestigd
 <figcaption>Interactiepatroon toestemming intrekken</figcaption>
 </figure>
 
-------------------------------------------------------------------------
+
 
 ## Gegevensverzoek van afnemer naar bronhouder
 
@@ -360,31 +370,41 @@ INT ->> PD: Lever gegevens
 </figure>
 
 
+
 # Architectuurprincipes
 
 ## Gegevensprincipes
 
-Bijvoorbeeld: - gegevens blijven bij de bron - dataminimalisatie -
-eenmalige ontsluiting
+Bijvoorbeeld:
+- gegevens blijven bij de bron  
+- dataminimalisatie  
+- eenmalige ontsluiting  
 
-------------------------------------------------------------------------
+
 
 ## Privacy en juridische principes
 
-Bijvoorbeeld: - toestemming expliciet - transparantie voor burgers -
-auditbaarheid
+Bijvoorbeeld:  
+- toestemming expliciet  
+- transparantie voor burgers  
+- auditbaarheid
 
-------------------------------------------------------------------------
+
 
 ## Technische principes
 
-Bijvoorbeeld: - open standaarden - API-first - federatief waar mogelijk
+Bijvoorbeeld:  
+- open standaarden  
+- API-first  
+- federatief waar mogelijk
 
-------------------------------------------------------------------------
+
 
 ## Governanceprincipes
 
-Bijvoorbeeld: - duidelijke rolverdeling - certificering van deelnemers
+Bijvoorbeeld:  
+- duidelijke rolverdeling  
+- certificering van deelnemers  
 
 
 # Generieke functies (logische architectuur)
@@ -406,8 +426,6 @@ Uit de interactiepatronen en het capability model blijken de volgende generieke 
 
 (hier mist "Logging & Verantwoording" dat vaak in architecturen specifieke aandacht krijgt. Hier lijkt dat impliciet in "Beheer & Continuïteit" te zitten, maar moet misschien expliciet gemaakt worden)
 
-
-------------------------------------------------------------------------
 
 ## Logisch architectuurdiagram
 

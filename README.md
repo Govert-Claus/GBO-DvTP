@@ -49,14 +49,14 @@ De belangrijkste architectuurdiagrammen zijn te vinden in de map **/diagrams**.
 
 | Diagram                                                   | Beschrijving                       |
 | --------------------------------------------------------- | ---------------------------------- |
-| [Contextdiagram](diagrams/context-diagram.md)             | Overzicht van het ecosysteem       |
-| [Interactiepatroon identificatie](diagrams/interactiepatroon-identificatie.md) | Interactiepatroon voor identificatie en authenticatie van een actor |
-| [Interactiepatroon toestemming geven](diagrams/interactiepatroon-toestemming-geven.md) | Interactiepatroon voor het geven van toestemming |
-| [Interactiepatroon toestemming intrekken](diagrams/interactiepatroon-toestemming-intrekken.md) | Interactiepatroon voor het intrekken van toestemming |
-| [Interactiepatroon gegevensverzoek](diagrams/interactiepatroon-gegevensverzoek.md) | Interactiepatroon voor het opvragen van gegevens bij een overheidsbron |
-| [Logische architectuur](diagrams/logical-architecture.md) | Generieke functies |
-| [Generieke functies](diagrams/masterdiagram-gegevensstelsel.md) | Generieke functies en hun werking |
-| [Capability map](diagrams/container-capability-map.md)    | Overzicht van alle capabilities    |
+| [Contextdiagram](diagrams/context-diagram.mmd)             | Overzicht van het ecosysteem       |
+| [Interactiepatroon identificatie](diagrams/interactiepatroon-identificatie.mmd) | Interactiepatroon voor identificatie en authenticatie van een actor |
+| [Interactiepatroon toestemming geven](diagrams/interactiepatroon-toestemming-geven.mmd) | Interactiepatroon voor het geven van toestemming |
+| [Interactiepatroon toestemming intrekken](diagrams/interactiepatroon-toestemming-intrekken.mmd) | Interactiepatroon voor het intrekken van toestemming |
+| [Interactiepatroon gegevensverzoek](diagrams/interactiepatroon-gegevensverzoek.mmd) | Interactiepatroon voor het opvragen van gegevens bij een overheidsbron |
+| [Logische architectuur](diagrams/logical-architecture.mmd) | Generieke functies |
+| [Generieke functies](diagrams/masterdiagram-gegevensstelsel.mmd) | Generieke functies en hun werking |
+| [Capability map](diagrams/container-capability-map.mmd)    | Overzicht van alle capabilities    |
 
 ---
 
@@ -111,14 +111,14 @@ dvtp-gbo-psa
 │   └─ open-vraagstukken.md
 │
 ├─ diagrams
-│   ├─ context-diagram.md
-│   ├─ interactiepatroon-identificatie.md
-│   ├─ interactiepatroon-toestemming-geven.md
-│   ├─ interactiepatroon-toestemming-intrekken.md
-│   ├─ interactiepatroon-gegevensverzoek.md
-│   ├─ logical-architecture.md
-│   ├─ masterdiagram-gegevensstelsel.md
-│   └─ container-capability-map.md
+│   ├─ context-diagram.mmd
+│   ├─ interactiepatroon-identificatie.mmd
+│   ├─ interactiepatroon-toestemming-geven.mmd
+│   ├─ interactiepatroon-toestemming-intrekken.mmd
+│   ├─ interactiepatroon-gegevensverzoek.mmd
+│   ├─ logical-architecture.mmd
+│   ├─ masterdiagram-gegevensstelsel.mmd
+│   └─ container-capability-map.mmd
 │
 └─ use-cases
     ├─ zorgeloos-vastgoed.md

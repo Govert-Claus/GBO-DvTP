@@ -5,33 +5,39 @@
 Dit document beschrijft de Project Start Architectuur (PSA) voor het
 programma **DvTP/GBO**.
 
-De PSA beschrijft: - de doelstelling van de oplossing - de context
-waarin de oplossing opereert - de architectuurprincipes en kaders - de
-benodigde generieke functies en capabilities - de beoogde logische
-architectuur
+De PSA beschrijft:  
+- de doelstelling van de oplossing  
+- de context waarin de oplossing opereert  
+- de use cases waarop de PSA is gebaseerd  
+- de interactiepatronen die de oplossing moet ondersteunen  
+- de architectuurprincipes en kaders  
+- de beoogde logische architectuur
+- de benodigde generieke functies en capabilities  
+- de architectuurkaders die voor de technische uitwerking gelden  
+- een realisatiestrategie  
+- nog openstaande vragen  
 
-De PSA beschrijft **wat de oplossing moet kunnen**, maar legt nog geen
-technische implementatie vast.
+De PSA beschrijft **wat de oplossing moet kunnen**, maar legt nog geen technische implementatie vast.
 
-------------------------------------------------------------------------
 
 ## Scope
 
-De PSA beschrijft de architectuur voor een generieke infrastructuur
-waarmee:
+De PSA beschrijft de architectuur voor een generieke infrastructuur waarmee:
 
 -   burgers gegevens van overheidsorganisaties kunnen verkrijgen
 -   burgers deze gegevens kunnen delen met private partijen
--   gegevens gebruikt kunnen worden voor Europese toepassingen zoals
-    **EDI Wallet** en **SDG/OOTS**
+-   gegevens gebruikt kunnen worden voor Europese toepassingen zoals **EDI Wallet** en **SDG/OOTS**
 
-De PSA omvat: - het afsprakenstelsel - generieke functies -
-capabilities - architectuurkaders
+De PSA omvat:
+- generieke functies  
+- capabilities  
+- architectuurkaders  
 
-De PSA beschrijft nog niet: - concrete technische oplossingen -
-implementaties van componenten - leverancierskeuzes
+De PSA beschrijft niet:  
+- concrete technische oplossingen  
+- implementaties van componenten  
+- leverancierskeuzes  
 
-------------------------------------------------------------------------
 
 ## Relatie met andere architecturen
 

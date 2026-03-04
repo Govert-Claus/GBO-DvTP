@@ -11,7 +11,6 @@ Uitwerking van rollen:
 -   DvTP/GBO stelsel
 -   Governance organisatie
 
-------------------------------------------------------------------------
 
 ## Contextdiagram
 

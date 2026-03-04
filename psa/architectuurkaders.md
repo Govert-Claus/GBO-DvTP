@@ -7,3 +7,5 @@ Kaders voor de technische uitwerking:
 - Federatief Datastelsel  
 - MIDO / GDI  
 - ...  
+
+(samenvoegen met architectuurprincipes?)
