@@ -1,8 +1,8 @@
-# 8. Capabilities
+# Capabilities
 
 Dit hoofdstuk beschrijft **wat het stelsel moet kunnen**.
 
-## 8.1. Capability model
+## Capability model
 
 De generieke functies uit het logisch architectuurmodel worden mogelik gemaakt met zogenaamde capabilities.
 In de onderstaande diagram zijn de benodigde capabilities per generieke functie geschetst.
@@ -117,7 +117,7 @@ GOV --> ORCH
 In de volgende paragrafen worden deze toegelicht.
 
 
-## 8.1. Identiteit & Vertrouwen
+## Identiteit & Vertrouwen
 
 Doel: betrouwbaar vaststellen wie een partij is en of deze vertrouwd kan worden.
 
@@ -140,7 +140,7 @@ Beheer van identiteitsattributen
 Verificatie van identiteit
 
 
-## 8.2. Toegang & Interactie
+## Toegang & Interactie
 
 Doel: faciliteren van interactie tussen burgers, afnemers en bronhouders.
 
@@ -167,7 +167,7 @@ Sessiebeheer
 Foutafhandeling
 
 
-## 8.3. Gegevensvoorziening
+## Gegevensvoorziening
 
 Doel: beschikbaar stellen van gegevens vanuit bronhouders.
 
@@ -192,7 +192,7 @@ Gegevensformattering
 Versiebeheer van gegevens
 
 
-## 8.4. Semantiek & Eenheid van taal
+## Semantiek & Eenheid van taal
 
 Doel: zorgen dat gegevens overal dezelfde betekenis hebben.
 
@@ -211,7 +211,7 @@ Semantische validatie
 Metadata beheer
 
 
-## 8.5. Gegevenskwaliteit & Validatie
+## Gegevenskwaliteit & Validatie
 
 Doel: waarborgen dat gegevens betrouwbaar en bruikbaar zijn.
 
@@ -230,7 +230,7 @@ Foutdetectie
 Rapportage over datakwaliteit
 
 
-## 8.6. Gebruik & Juridische Grondslag
+## Gebruik & Juridische Grondslag
 
 Doel: waarborgen dat gegevens rechtmatig gebruikt worden.
 
@@ -251,7 +251,7 @@ Audit van gegevensgebruik
 Logging van gebruik
 
 
-## 8.7. Orkestratie & Integratie
+## Orkestratie & Integratie
 
 Doel: coördineren van gegevensuitwisseling tussen partijen.
 
@@ -272,7 +272,7 @@ Eventafhandeling
 Berichtenafhandeling
 
 
-## 8.9. Beheer & Continuïteit
+## Beheer & Continuïteit
 
 Doel: stabiele en betrouwbare werking van het stelsel.
 

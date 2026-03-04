@@ -1,8 +1,8 @@
-# 8. Generieke functies (logische architectuur)
+# Generieke functies (logische architectuur)
 
 Capabilities worden gerealiseerd door **generieke functies**.
 
-## 8.1 Overzicht generieke functies
+## Overzicht generieke functies
 
 Uit de interactiepatronen en het capability model blijken de volgende generieke functies nodig.
 
@@ -20,7 +20,7 @@ Uit de interactiepatronen en het capability model blijken de volgende generieke 
 
 ------------------------------------------------------------------------
 
-## 8.2 Logisch architectuurdiagram
+## Logisch architectuurdiagram
 
 Het logische architectuurdiagram schetst de generieke functies ten opzichte van elkaar.
 

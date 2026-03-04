@@ -1,10 +1,10 @@
-# 5. Interactiepatronen DvTP (PSA)
+# Interactiepatronen DvTP (PSA)
 
 Dit document beschrijft de belangrijkste interactiepatronen voor DvTP zoals afgeleid uit de functionele requirements. De patronen zijn bedoeld voor gebruik in de PSA en zijn daarom **logisch (technologie‑onafhankelijk)** beschreven.
 
 ------------------------------------------------------------------------
 
-## 5.1. Identificatie en authenticatie van een actor
+## Identificatie en authenticatie van een actor
 
 ### Doel
 
@@ -46,7 +46,7 @@ TI ->> PD: Authenticatie geslaagd
 
 ------------------------------------------------------------------------
 
-## 5.2. Toestemming geven en registreren
+## Toestemming geven en registreren
 
 ### Doel
 
@@ -91,7 +91,7 @@ CONSENT ->> PD: Terugkoppeling resultaat
 
 ------------------------------------------------------------------------
 
-## 5.3. Toestemming beheren of intrekken
+## Toestemming beheren of intrekken
 
 ### Doel
 
@@ -132,7 +132,7 @@ CONSENT ->> Burger: Intrekking bevestigd
 
 ------------------------------------------------------------------------
 
-## 5.4. Gegevensverzoek van afnemer naar bronhouder
+## Gegevensverzoek van afnemer naar bronhouder
 
 ### Doel
 

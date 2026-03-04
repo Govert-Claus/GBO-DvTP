@@ -1,6 +1,6 @@
-# 1. Inleiding
+# Inleiding
 
-## 1.1 Doel van dit document
+## Doel van dit document
 
 Dit document beschrijft de Project Start Architectuur (PSA) voor het
 programma **DvTP/GBO**.
@@ -15,7 +15,7 @@ technische implementatie vast.
 
 ------------------------------------------------------------------------
 
-## 1.2 Scope
+## Scope
 
 De PSA beschrijft de architectuur voor een generieke infrastructuur
 waarmee:
@@ -33,7 +33,7 @@ implementaties van componenten - leverancierskeuzes
 
 ------------------------------------------------------------------------
 
-## 1.3 Relatie met andere architecturen
+## Relatie met andere architecturen
 
 De PSA sluit aan bij:
 
@@ -42,5 +42,5 @@ De PSA sluit aan bij:
 -   EDI Wallet / EUDI Wallet
 -   Single Digital Gateway (SDG)
 -   Once Only Technical System (OOTS)
-
-en de PSA maakt gebruik van
+-   Federatief Datastelsel
+-   ...

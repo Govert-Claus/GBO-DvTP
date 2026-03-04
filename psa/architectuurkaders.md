@@ -1,4 +1,4 @@
-# 9. Architectuurkaders
+# Architectuurkaders
 
 Kaders voor de technische uitwerking:
 

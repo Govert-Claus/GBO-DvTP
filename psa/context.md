@@ -1,6 +1,6 @@
-# 2. Context en aanleiding
+# Context en aanleiding
 
-## 2.1 Beleidscontext
+## Beleidscontext
 
 Beschrijving van:
 
@@ -11,7 +11,7 @@ Beschrijving van:
 
 ------------------------------------------------------------------------
 
-## 2.2 Huidige situatie
+## Huidige situatie
 
 O.a.:
 - versnipperde gegevensontsluiting
@@ -21,12 +21,12 @@ O.a.:
 
 ------------------------------------------------------------------------
 
-## 2.3 Probleemstelling
+## Probleemstelling
 
 Welke problemen lost DvTP/GBO op?
 
 ------------------------------------------------------------------------
 
-## 2.4 Doelstelling
+## Doelstelling
 
 Wat wil het programma realiseren?

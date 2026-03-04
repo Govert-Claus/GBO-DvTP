@@ -1,8 +1,8 @@
-# 3. Ecosysteem en rollen
+# Ecosysteem en rollen
 
-## 3.1 Actoren
+## Actoren
 
-Voorbeelden:
+Uitwerking van rollen:
 
 -   Burger
 -   Bronhouder
@@ -13,7 +13,7 @@ Voorbeelden:
 
 ------------------------------------------------------------------------
 
-## 3.2 Contextdiagram
+## Contextdiagram
 
 In de contextdiagram worden de actoren ten opzichte van elkaar en van het DvTP/GBO stelsel geschetst.
 
