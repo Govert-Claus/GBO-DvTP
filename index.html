@@ -26,6 +26,16 @@
   <section id="realisatiestrategie" data-include-format="markdown" data-include="psa/realisatiestrategie.md"></section>
   <section id="open-vraagstukken" data-include-format="markdown" data-include="psa/open-vraagstukken.md"></section>
 
+  <script class="remove">
+    document.onreadystatechange = () => {
+      if (document.readyState === 'complete') {
+        if (window.mermaid) {
+          window.mermaid.initialize({ startOnLoad: true });
+        }
+      }
+    };
+  </script>
+
 </body>
 
 </html>
