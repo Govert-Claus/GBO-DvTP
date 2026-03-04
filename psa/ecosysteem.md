@@ -21,6 +21,8 @@ In de contextdiagram worden de actoren ten opzichte van elkaar en van het DvTP/G
 
 ```mermaid
 
+<div class="mermaid">
+
 flowchart LR
 
 Bronhouder
@@ -34,6 +36,8 @@ Bronhouder --> DvTP
 DvTP --> Wallet
 DvTP --> Privaat
 DvTP --> SDG
+
+</div>
 
 ```
 
