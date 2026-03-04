@@ -1,4 +1,4 @@
-import { loadRespecWithConfiguration } from "https://raw.githubusercontent.com/Govert-Claus/GBO-DvTP/refs/heads/main/js/organisation-config.mjs";
+import { loadRespecWithConfiguration } from "./organisation-config.mjs";
 
 loadRespecWithConfiguration({
   useLogo: true,
