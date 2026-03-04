@@ -13,8 +13,6 @@ architectuur
 De PSA beschrijft **wat de oplossing moet kunnen**, maar legt nog geen
 technische implementatie vast.
 
-------------------------------------------------------------------------
-
 ## Scope
 
 De PSA beschrijft de architectuur voor een generieke infrastructuur
