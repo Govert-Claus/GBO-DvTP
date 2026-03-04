@@ -7,6 +7,7 @@ Dit hoofdstuk beschrijft **wat het stelsel moet kunnen**.
 De generieke functies uit het logisch architectuurmodel worden mogelik gemaakt met zogenaamde capabilities.
 In de onderstaande diagram zijn de benodigde capabilities per generieke functie geschetst.
 
+<figure>
 ```mermaid
 
 flowchart LR
@@ -113,6 +114,8 @@ GOV --> SEM
 GOV --> ORCH
 
 ```
+<figcaption>Generieke functies met capabilities</figcaption>
+</figure>
 
 In de volgende paragrafen worden deze toegelicht.
 

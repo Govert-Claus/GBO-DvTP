@@ -1,11 +1,11 @@
-import { loadRespecWithConfiguration } from "https://logius-standaarden.github.io/publicatie/respec/organisation-config.mjs";
+import { loadRespecWithConfiguration } from "organisation-config.mjs";
 
 loadRespecWithConfiguration({
   useLogo: true,
   useLabel: true,
   license: "cc-by",
   specStatus: "WV",
-  specType: "HR",
+  specType: "PSA",
   pubDomain: "hl",
   shortName: "template",
   publishDate: "2026-03-04",
