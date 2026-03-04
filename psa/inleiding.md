@@ -1,0 +1,46 @@
+# 1. Inleiding
+
+## 1.1 Doel van dit document
+
+Dit document beschrijft de Project Start Architectuur (PSA) voor het
+programma **DvTP/GBO**.
+
+De PSA beschrijft: - de doelstelling van de oplossing - de context
+waarin de oplossing opereert - de architectuurprincipes en kaders - de
+benodigde generieke functies en capabilities - de beoogde logische
+architectuur
+
+De PSA beschrijft **wat de oplossing moet kunnen**, maar legt nog geen
+technische implementatie vast.
+
+------------------------------------------------------------------------
+
+## 1.2 Scope
+
+De PSA beschrijft de architectuur voor een generieke infrastructuur
+waarmee:
+
+-   burgers gegevens van overheidsorganisaties kunnen verkrijgen
+-   burgers deze gegevens kunnen delen met private partijen
+-   gegevens gebruikt kunnen worden voor Europese toepassingen zoals
+    **EDI Wallet** en **SDG/OOTS**
+
+De PSA omvat: - het afsprakenstelsel - generieke functies -
+capabilities - architectuurkaders
+
+De PSA beschrijft nog niet: - concrete technische oplossingen -
+implementaties van componenten - leverancierskeuzes
+
+------------------------------------------------------------------------
+
+## 1.3 Relatie met andere architecturen
+
+De PSA sluit aan bij:
+
+-   NORA
+-   GDI
+-   EDI Wallet / EUDI Wallet
+-   Single Digital Gateway (SDG)
+-   Once Only Technical System (OOTS)
+
+en de PSA maakt gebruik van

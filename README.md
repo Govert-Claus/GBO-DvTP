@@ -1,77 +1,151 @@
-## ReSpec template instructies
+# Project Start Architectuur (PSA)
 
-ReSpec is een tool om html en pdf documenten te genereren op basis van markdown content.
+## Delen via Toestemming naar Private Partijen / Generieke BronOntsluiting (DvTP/GBO)
 
-Gebruik de knop [_Use this template_](https://github.com/Logius-standaarden/ReSpec-template/generate) om aan de slag te gaan. Dit maakt een kopie van de template in uw eigen GitHub repository die dan aangepast en uitgebreid kan worden.
+Deze repository bevat de **Project Start Architectuur (PSA)** voor het programma **DvTP/GBO**.
 
-De dynamische pagina is van het template document [hier](https://logius-standaarden.github.io/ReSpec-template/) te zien.
+DvTP/GBO heeft als doel een **generieke infrastructuur en afsprakenstelsel** te realiseren waarmee gegevens van overheidsorganisaties beschikbaar kunnen worden gemaakt voor:
 
-Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren. Deze workflows worden 
-automatisch gerund zodra er een aanpassing gedaan wordt aan de main branch.
+* burgers
+* private partijen
+* Europese toepassingen zoals **EDI Wallet** en **Single Digital Gateway (SDG/OOTS)**
 
-### Vereiste voor gebruik
-- Kennis van git/github
-- Kennis van markdown en/of HTML
-- Kennis van de vorm van een Javascript object
-- Een webserver om de documentatie te hosten
+De PSA beschrijft:
 
-### Gebruikersinstructie
-Om het gebruik van dit template makkelijker te maken raden we het aan om een IDE te gebruiken. Die geeft een voorbeeld van hoe de markdown eruit zal zien, kan laten zien of de config files nog in de correcte vorm zijn en kan helpen in het gebruik van git.  
-Een gratis voorbeeld van een IDE is: [Visual studio code](https://code.visualstudio.com/).
+* de context en doelstelling van de oplossing
+* de architectuurprincipes en kaders
+* het capability model
+* de generieke functies
+* de logische architectuur
 
-Aanpassingen maken aan het document gaat op 2 manieren:
-- De configuratie van het document aanpassing in de config files
-- Markdown files toevoegen/veranderen
+De PSA beschrijft **wat het stelsel moet kunnen**, maar legt nog **geen technische implementatie** vast.
+De technische invulling volgt in een aparte software-architectuur.
 
-De **configuratie files** bevat informatie over de organisatie en over 
-de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
-voor meer informatie over de configuratie opties. De files zijn gesplitst in 2 files:
-een [config.js](js/config.js] en een organisation config. De organiastion config
-wordt automatisch ingeladen door de config.js en staat centraal gepubliceerd.
+---
 
-De organisation_config bevat informatie over de organisatie, de informatie in deze file 
-zal bijna nooit veranderen zoals de naam van de organisatie. Het wordt aangeraden de file 
-zelf te hosten zodat hij in alle documentatie van de organisatie gebruikt kan worden en
-niet elke keer gekopieerd hoeft te worden
+# Navigatie
 
-De document_config bevat informatie die alleen relevant is voor het huidige document.
+## PSA Hoofdstukken
 
-Beide configuratie bestanden worden gelinkt in de `index.html` file.
+| Hoofdstuk                                                           | Beschrijving                            |
+| ------------------------------------------------------------------- | --------------------------------------- |
+| [1. Inleiding](psa/inleiding.md)                                    | Doel, scope en positionering van de PSA |
+| [2. Context en aanleiding](psa/context.md)                          | Beleidscontext en probleemstelling      |
+| [3. Ecosysteem en rollen](psa/ecosysteem.md)                        | Actoren en interacties in het stelsel   |
+| [4. Use cases](psa/use-cases.md)                                    | Architectuurdrijvende scenario’s        |
+| [5. Interactiepatronen](psa/interactiepatronen.md)                  | Werking van de architecuur              |
+| [6. Architectuurprincipes](psa/architectuurprincipes.md)            | Principes en uitgangspunten             |
+| [7. Generieke functies](psa/generieke-functies.md)                  | Logische architectuur van het stelsel   |
+| [8. Capabilities per functie](psa/capabilities.md)                  | Uitwerking van capabilities             |
+| [9. Architectuurkaders](psa/architectuurkaders.md)                  | Richtlijnen voor technische uitwerking  |
+| [10. Realisatiestrategie](psa/realisatiestrategie.md)               | Implementatie en pilots                 |
+| [11. Openstaande vraagstukken](psa/open-vraagstukken.md)            | Onderwerpen voor verdere uitwerking     |
 
-**Markdown files** bevatten de content van het document. Alle content
-kan in 1 document, maar het is aan te raden om de content te splitsen
-in verschillende files met een toepasselijke naam om onderhoud 
-makkelijker te maken.
+---
 
-Na het toevoegen van een nieuwe markdown file moet hij toegevoegd worden
-aan de [index.html](index.html). Je voegt hem toe door de naam en eventueel relevante CSS class 
-toe te voegen aan het ```content``` object in de ```config.js```. 
-De volgorde van ```content``` bepaalt de volgorde in het resulterende document.
+# Architectuurdiagrammen
 
-```content: {"ch01": "informative", "mermaid": ""},```
-Deze code voegt 2 markdown files toe:
-- `ch01.md` met de CSS class `informative`
-- `mermaid.md` zonder CSS class
+De belangrijkste architectuurdiagrammen zijn te vinden in de map **/diagrams**.
 
-voor een volledige lijst van CSS classes zie de [ReSpec Documentation](https://respec.org/docs/#css-classes)
+| Diagram                                                   | Beschrijving                       |
+| --------------------------------------------------------- | ---------------------------------- |
+| [Contextdiagram](diagrams/context-diagram.md)             | Overzicht van het ecosysteem       |
+| [Interactiepatroon identificatie](diagrams/interactiepatroon-identificatie.md) | Interactiepatroon voor identificatie en authenticatie van een actor |
+| [Interactiepatroon toestemming geven](diagrams/interactiepatroon-toestemming-geven.md) | Interactiepatroon voor het geven van toestemming |
+| [Interactiepatroon toestemming intrekken](diagrams/interactiepatroon-toestemming-intrekken.md) | Interactiepatroon voor het intrekken van toestemming |
+| [Interactiepatroon gegevensverzoek](diagrams/interactiepatroon-gegevensverzoek.md) | Interactiepatroon voor het opvragen van gegevens bij een overheidsbron |
+| [Logische architectuur](diagrams/logical-architecture.md) | Generieke functies |
+| [Generieke functies](diagrams/masterdiagram-gegevensstelsel.md) | Generieke functies en hun werking |
+| [Capability map](diagrams/container-capability-map.md)    | Overzicht van alle capabilities    |
 
-Deze classes zijn ook binnen de markdown files te gebruiken op de volgende manier:  
-```<div class="example">voorbeeld</div>```
+---
 
-### Automatische controles
-Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
-uitgevoerd:  
+# Use cases
 
-Een WCAG-check (Web Content Accessibility Guidelines), deze guidelines
-gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid
-van webapplicaties verbeterd voor zowel verschillende apparaten 
-als voor mensen met een beperking.
+Use cases helpen om de architectuur te valideren en de benodigde capabilities te bepalen.
 
-Een link-check, deze check controleert of alle links die in het 
-document staan ook naar iets wijzen.
+| Use case                                                  | Beschrijving                                   |
+| --------------------------------------------------------- | ---------------------------------------------- |
+| [Hypotheekaanvraag](use-cases/zorgeloos-vastgoed.md)      | Delen van inkomensgegevens met een bank        |
+| [Landelijke Voorziening Gebouwgegevens](use-cases/lvg.md) | Delen van gebouwgegevens met aannemers         |
+| [Wallet vulling](use-cases/wallet-vulling.md)             | Gegevens beschikbaar maken voor een EDI wallet |
+| [SDG/OOTS bewijsuitwisseling](use-cases/sdg-oost.md)      | Europese gegevensuitwisseling                  |
 
-outputs van deze tests zijn te vinden in het tabblad `Actions` in de GitHub repository.
+---
 
-### Publiceren van documenten
-Na een update in de main branch wordt er een statische HTML en een PDF-versie gepubliceerd, indien de repo onder [Logius-standaarden](https://github.com/Logius-standaarden) op GitHub staat.
-Er wordt automatisch een PDF versie als alternatief format aangemaakt.
+# Generieke functies
+
+De architectuur van DvTP/GBO is gebaseerd op acht generieke functies:
+
+1. Identiteit & Vertrouwen
+2. Toegang & Interactie
+3. Gegevensvoorziening
+4. Semantiek & Eenheid van taal
+5. Gegevenskwaliteit & Validatie
+6. Gebruik & Juridische grondslag
+7. Orkestratie & Integratie
+8. Beheer & Continuïteit
+
+Deze generieke functies vormen de basis voor het capability model en de verdere architectuuruitwerking.
+
+---
+
+# Repository structuur
+
+```
+dvtp-gbo-psa
+│
+├─ README.md
+│
+├─ psa
+│   ├─ inleiding.md
+│   ├─ context.md
+│   ├─ ecosysteem.md
+│   ├─ use-cases.md
+│   ├─ interactiepatronen.md
+│   ├─ architectuurprincipes.md
+│   ├─ generieke-functies.md
+│   ├─ capabilities.md
+│   ├─ architectuurkaders.md
+│   ├─ realisatiestrategie.md
+│   └─ open-vraagstukken.md
+│
+├─ diagrams
+│   ├─ context-diagram.md
+│   ├─ interactiepatroon-identificatie.md
+│   ├─ interactiepatroon-toestemming-geven.md
+│   ├─ interactiepatroon-toestemming-intrekken.md
+│   ├─ interactiepatroon-gegevensverzoek.md
+│   ├─ logical-architecture.md
+│   ├─ masterdiagram-gegevensstelsel.md
+│   └─ container-capability-map.md
+│
+└─ use-cases
+    ├─ zorgeloos-vastgoed.md
+    ├─ lvg.md
+    ├─ wallet-vulling.md
+    └─ sdg-oots.md
+```
+
+---
+
+# Status
+
+Deze PSA is **in ontwikkeling** en wordt iteratief aangevuld.
+Wijzigingen worden bijgehouden via GitHub versiebeheer.
+
+---
+
+# Bijdragen
+
+Bijdragen aan deze architectuur kunnen worden gedaan via:
+
+* issues
+* pull requests
+* architectuurdiscussies
+
+---
+
+# Licentie
+
+Nog te bepalen.

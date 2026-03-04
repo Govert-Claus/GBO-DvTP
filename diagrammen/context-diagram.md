@@ -1,0 +1,17 @@
+# Context
+
+```mermaid
+
+flowchart LR
+
+Bronhouder
+DvTP["DvTP/GBO stelsel
+(afspraken, standaarden, voorzieningen)"]
+Wallet
+Privaat["Private partij"]
+SDG["SDG/OOTS"]
+
+Bronhouder --> DvTP
+DvTP --> Wallet
+DvTP --> Privaat
+DvTP --> SDG
