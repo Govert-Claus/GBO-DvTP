@@ -1,10 +1,23 @@
-.mermaid {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+/* 1. Forceer de figure container naar de volle breedte */
+.md-typeset figure.mermaid {
+    display: block;
+    width: 100% !important;
+    margin: 1em 0;
+    overflow: visible; /* Zorg dat het diagram niet wordt afgekapt */
 }
-.mermaid svg {
-    max-width: 100%; /* Zorgt dat hij niet buiten het scherm loopt */
-    height: auto;
-    min-width: 600px; /* Forceert een minimale breedte voor kleine diagrammen */
+
+/* 2. Zorg dat de SVG binnen die figure ook de ruimte pakt */
+.md-typeset figure.mermaid svg {
+    display: block;
+    margin: 0 auto;
+    width: 100% !important;
+    max-width: none !important; /* Verwijder de beperking van de renderer */
+    height: auto !important;
+}
+
+/* 3. Als je captions gebruikt (<figcaption>), zorg dat die gecentreerd blijven */
+.md-typeset figcaption {
+    margin-top: 0.5em;
+    text-align: center;
+    width: 100%;
 }
