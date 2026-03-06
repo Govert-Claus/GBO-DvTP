@@ -5,6 +5,7 @@ theme:
   features:
     - navigation.sections
     - content.code.copy
+    - content.code.annotate # Handig voor uitleg bij diagrammen
 
 markdown_extensions:
 # 1. Hiermee herkent MkDocs de ```mermaid blokken
@@ -18,6 +19,9 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path: docs
       check_paths: true
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search
