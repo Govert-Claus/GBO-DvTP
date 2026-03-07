@@ -16,6 +16,8 @@ Uitwerking van rollen:
 
 In de contextdiagram worden de actoren ten opzichte van elkaar en van het DvTP/GBO stelsel geschetst.
 
+--8<-- "diagrammen/context-diagram.mmd"
+
 <figure>
 
 ```mermaid
