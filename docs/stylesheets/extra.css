@@ -1,3 +1,8 @@
+/* overschrijf de width: fit-content voor het figure element */
+.md-typeset figure {
+  width: 100%;
+}
+
 /* 1. Forceer de figure container naar de volle breedte */
 .md-typeset figure.mermaid {
     display: block;
