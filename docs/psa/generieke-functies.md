@@ -24,30 +24,4 @@ Uit de interactiepatronen en het capability model blijken de volgende generieke 
 
 Het logische architectuurdiagram schetst de generieke functies ten opzichte van elkaar.
 
-<figure>
-
-```mermaid
-
-flowchart LR
-
-ID["Identiteit & Vertrouwen"]
-ACCESS["Toegang & Interactie"]
-DATA["Gegevensvoorziening"]
-SEM["Semantiek & Eenheid van taal"]
-QUALITY["Gegevenskwaliteit & Validatie"]
-LEGAL["Gebruik & Juridische grondslag"]
-ORCH["Orkestratie & Integratie"]
-OPS["Beheer & Continuïteit"]
-
-ID --> ACCESS
-ACCESS --> DATA
-DATA --> QUALITY
-DATA --> SEM
-ACCESS --> LEGAL
-ORCH --> DATA
-OPS --> ORCH
-
-```
-
-<figcaption>Logisch architectuurdiagram</figcaption>
-</figure>
+--8<-- "diagrammen/context-diagram.mmd"
