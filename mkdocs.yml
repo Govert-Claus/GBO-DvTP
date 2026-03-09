@@ -45,8 +45,14 @@ plugins:
       cover_subtitle: "Project Start Architectuur"
       cover_logo: media/ictu-logo.png
       output_path: pdf/PSA-GBO-DvTP.pdf
-      ordered_chapter_level: 2
+      ordered_chapter_level: 1
       enabled_if_env: ENABLE_PDF_EXPORT
+      # BELANGRIJK voor Material theme
+      render_js: true
+      two_columns_level: 0
+      toc_level: 2
+      css: stylesheets/pdf.css
+      content_selector: ".md-content__inner"
 
 nav:
   - Home: index.md
