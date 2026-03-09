@@ -1,33 +1,51 @@
 site_name: PSA GBO/DvTP
+
 theme:
   name: material
   language: nl
   features:
     - navigation.sections
     - content.code.copy
-    - content.code.annotate # Handig voor uitleg bij diagrammen
+    - content.code.annotate
 
 markdown_extensions:
-# 1. Hiermee herkent MkDocs de ```mermaid blokken
+
+  # Mermaid diagrammen
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-# 2. Hiermee kun je externe bestanden (zoals je .mmd files) invoegen
+  # Includes voor diagrammen
   - pymdownx.snippets:
       base_path: docs
       check_paths: true
 
+  # Automatische inhoudsopgave
+  - toc:
+      permalink: true
+      toc_depth: 3
+
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/pdf.css
 
 plugins:
   - search
 
+  # PDF generatie
+  - with-pdf:
+      cover_title: "GBO / DvTP"
+      cover_subtitle: "Project Start Architectuur"
+      cover_logo: media/ictu-logo.png
+      ordered_chapter_level: 2
+      output_path: pdf/PSA-GBO-DvTP.pdf
+      enabled_if_env: ENABLE_PDF_EXPORT
+
 nav:
   - Home: index.md
+
   - PSA:
     - Inleiding: psa/inleiding.md
     - Context: psa/context.md
@@ -40,6 +58,7 @@ nav:
     - Architectuurkaders: psa/architectuurkaders.md
     - Realisatiestrategie: psa/realisatiestrategie.md
     - Open Vraagstukken: psa/open-vraagstukken.md
+
   - Use Cases:
     - Zorgeloos Vastgoed: use-cases/zorgeloos-vastgoed.md
     - Gebruik vastgoedgegevens: use-cases/lvg.md

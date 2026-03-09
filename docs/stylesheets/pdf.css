@@ -1,0 +1,23 @@
+@media print {
+
+.md-sidebar {
+  display: none;
+}
+
+.md-header {
+  display: none;
+}
+
+.md-content {
+  max-width: 100%;
+}
+
+.md-typeset h1 {
+  page-break-before: always;
+}
+
+.md-typeset figure {
+  width: 100% !important;
+}
+
+}

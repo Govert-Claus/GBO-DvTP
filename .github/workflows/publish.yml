@@ -1,8 +1,9 @@
 name: Deploy MkDocs PSA
+
 on:
   push:
     branches:
-      - main  # Of 'master', afhankelijk van je repo
+      - main
 
 permissions:
   contents: write
@@ -10,6 +11,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -21,7 +23,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs-material pymdown-extensions
+          pip install mkdocs-material
+          pip install pymdown-extensions
+          pip install mkdocs-with-pdf
+
+      - name: Build site + PDF
+        run: |
+          ENABLE_PDF_EXPORT=1 mkdocs build
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
