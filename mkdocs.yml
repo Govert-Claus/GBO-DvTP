@@ -19,7 +19,8 @@ markdown_extensions:
 
   # Includes voor diagrammen
   - pymdownx.snippets:
-      base_path: docs
+      base_path:
+        - docs
       check_paths: true
 
   # Automatische inhoudsopgave
@@ -31,6 +32,10 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/pdf.css
 
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/mermaid-init.js
+
 plugins:
   - search
 
@@ -39,8 +44,8 @@ plugins:
       cover_title: "GBO / DvTP"
       cover_subtitle: "Project Start Architectuur"
       cover_logo: media/ictu-logo.png
-      ordered_chapter_level: 2
       output_path: pdf/PSA-GBO-DvTP.pdf
+      ordered_chapter_level: 2
       enabled_if_env: ENABLE_PDF_EXPORT
 
 nav:
