@@ -38,19 +38,9 @@ extra_javascript:
 
 plugins:
   - search
-
-  # PDF generatie
-  - with-pdf:
-      cover_title: "GBO / DvTP"
-      cover_subtitle: "Project Start Architectuur"
-      cover_logo: media/ictu-logo.png
-      output_path: pdf/PSA-GBO-DvTP.pdf
-      ordered_chapter_level: 1
-      enabled_if_env: ENABLE_PDF_EXPORT
-      # BELANGRIJK voor Material theme
-      render_js: true
-      two_columns_level: 0
-      toc_level: 3
+  - print-site:
+      add_to_navigation: false
+      print_page_title: "PSA GBO / DvTP"
 
 nav:
   - Home: index.md

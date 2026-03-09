@@ -1,5 +1,4 @@
 mkdocs==1.5.3
 mkdocs-material==9.5.18
-mkdocs-with-pdf==0.9.3
+mkdocs-print-site-plugin==2.3.6
 pymdown-extensions==10.7
-beautifulsoup4==4.12.3
