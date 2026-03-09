@@ -52,10 +52,23 @@ Het delen van persoonsgegevens ondervindt op dit moment de volgende problemen:
 
 ## Doelstelling
 
-Het inrichten van een stelsel (een verzameling afspraken, standaarden en voorzieningen) waarin het mogelijk is dat:
+Om de problemen uit de vorige paragraaf op te lossen wordt een stelsel (een verzameling afspraken, standaarden, stelselfuncties en voorzieningen) voorgesteld, waarin het mogelijk is dat:
 
 - burgers toestemming geven en beheren via een vertrouwde overheidsomgeving, op basis van begrijpelijke informatie over doel, gegevens en ontvanger;
 
 - private dienstverleners alleen gegevens opvragen binnen de afgesproken reikwijdte en de burger terugkoppelen welke gegevens zijn ontvangen en gebruikt;
 
 - bronhouders alleen verstrekken na verificatie van een geldig verzoek en binnen een afgebakend doel, met waarborgen voor integriteit en herleidbaarheid.
+
+
+De doelstellingen van het GBO/DvTP stelsel zijn:
+
+- Een lagere implementatielast voor bronhouders
+
+- Het voorkomen van maatwerk en ad-hoc-implementaties
+
+- Effectiever hergebruik van generieke voorzieningen
+
+- Samenhangende afsprakenstelsels die samenwerking tussen stelsels vereenvoudigen
+
+- Meer uniformiteit en interoperabiliteit tussen overheden, en overheid en private partijen

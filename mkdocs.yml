@@ -44,7 +44,7 @@ plugins:
       enumerate_headings: true
 
 nav:
-  # - Voorblad: voorblad.md
+  - Voorblad: voorblad.md
 
   - Over dit document: index.md
 
