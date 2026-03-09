@@ -30,10 +30,17 @@
   margin: 20mm;
 }
 @page {
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
   @bottom-center {
     content: "Pagina " counter(page) " van " counter(pages);
     font-size: 9pt;
     color: #666;
+  }
+  @top-center {
+    content: "PSA GBO / DvTP";
+    font-size: 9pt;
+    color: #888;
   }
 }
 

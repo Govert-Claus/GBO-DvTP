@@ -41,10 +41,10 @@ plugins:
   - print-site:
       add_to_navigation: true
       print_page_title: "PSA GBO / DvTP"
-      enumerate_headings: false
+      enumerate_headings: true
 
 nav:
-  - Voorblad: voorblad.md
+  # - Voorblad: voorblad.md
 
   - Over dit document: index.md
 
