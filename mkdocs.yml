@@ -50,9 +50,7 @@ plugins:
       # BELANGRIJK voor Material theme
       render_js: true
       two_columns_level: 0
-      toc_level: 2
-      css: stylesheets/pdf.css
-      content_selector: ".md-content__inner"
+      toc_level: 3
 
 nav:
   - Home: index.md
