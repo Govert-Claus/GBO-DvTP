@@ -41,7 +41,7 @@ plugins:
   - print-site:
       add_to_navigation: true
       print_page_title: "PSA GBO / DvTP"
-      enumerate_headings: true
+      enumerate_headings: false
 
 nav:
   - Voorblad: voorblad.md
@@ -51,13 +51,11 @@ nav:
   - PSA:
     - Inleiding: psa/inleiding.md
     - Context: psa/context.md
-    - Ecosysteem en rollen: psa/ecosysteem.md
-    - Use Cases: psa/use-cases.md
-    - Interactiepatronen: psa/interactiepatronen.md
     - Architectuurprincipes: psa/architectuurprincipes.md
+    - Ecosysteem en oplossingsrichting: psa/ecosysteem.md
+    - Interactiepatronen: psa/interactiepatronen.md
     - Logische architectuur: psa/generieke-functies.md
     - Capabilities: psa/capabilities.md
-    - Architectuurkaders: psa/architectuurkaders.md
     - Realisatiestrategie: psa/realisatiestrategie.md
     - Open Vraagstukken: psa/open-vraagstukken.md
 
