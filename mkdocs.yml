@@ -39,11 +39,14 @@ extra_javascript:
 plugins:
   - search
   - print-site:
-      add_to_navigation: false
+      add_to_navigation: true
       print_page_title: "PSA GBO / DvTP"
+      enumerate_headings: true
 
 nav:
-  - Home: index.md
+  - Voorblad: voorblad.md
+
+  - Over dit document: index.md
 
   - PSA:
     - Inleiding: psa/inleiding.md
