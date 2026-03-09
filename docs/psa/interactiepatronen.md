@@ -1,7 +1,6 @@
 # Interactiepatronen DvTP (PSA)
 
-Dit document beschrijft de belangrijkste interactiepatronen voor DvTP zoals afgeleid uit de functionele requirements. De patronen zijn bedoeld voor gebruik in de PSA en zijn daarom **logisch (technologie‑onafhankelijk)** beschreven.
-
+Dit document beschrijft de belangrijkste interactiepatronen voor GBO/DvTP zoals afgeleid uit de use cases. De patronen zijn bedoeld voor gebruik in de PSA en zijn daarom **logisch (technologie‑onafhankelijk)** beschreven. In de patronen is op verschillende plekken sprake van een "dienst". In deze fase van ontwerp is nog niet besloten of dit afspraken, standaarden of centrale of decentrale voorzieningen zijn.  
 
 
 ## Identificatie en authenticatie van een actor
@@ -45,7 +44,7 @@ Een burger geeft expliciete toestemming voor het delen van een specifieke datase
 
 -   Burger
 -   Private dienstverlener
--   Toestemmingsvoorziening
+-   Toestemmingsdienst
 -   Consentregister
 
 ### Interactie
