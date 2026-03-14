@@ -1,0 +1,7 @@
+De vijf centrale PSA-vraagstukken
+Op basis van de documenten zijn dit de vraagstukken die de PSA moet beantwoorden:
+1. Identificatie & authenticatie private partijen — eHerkenning is de logische kandidaat, maar de onboarding, accreditatie en het onderscheid tussen directe afnemers en intermediairs/integrators moeten worden uitgewerkt. TIP biedt hiervoor aanknopingspunten.
+2. Burgeridentificatie en het BSN — het BSN mag bij private partijen niet direct worden doorgegeven. Dit vereist een pseudonimiseringslaag of sector-ID, terwijl voor OOTS de eIDAS-identifier geldt en de wallet werkt met SD-JWT VC-attributen. Dit zijn drie verschillende regimes op één generieke ontsluiting.
+3. Vertrouwensstelsel — welke partijen mogen deelnemen, hoe worden ze geaccrediteerd, welke niveaus van zekerheid gelden per gegevenstype, en hoe verhouden PKI(O), eHerkenning, eIDAS en de TIP-afspraken zich tot elkaar.
+4. Toestemming — de wettelijke grondslag (via Wdo/AMvB), de technische implementatie (toestemmingsregister, tokens, TTL), intrekking, en het onderscheid met OOTS waar toestemming een "verklaring van instemming" is, en de wallet waar de burger zelf de credential beheert.
+5. Transformatie-architectuur — hoe één bronhouder-API leidt tot drie verschillende afnemerprotocollen (DvTP/REST+OAuth, OOTS/AS4+eDelivery, Wallet/OID4VC). Dit is het technische hart van de "bronhouder één keer, afnemer naar wens"-ambitie.

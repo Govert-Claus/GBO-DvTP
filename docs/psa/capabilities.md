@@ -4,7 +4,7 @@ Dit hoofdstuk beschrijft **wat het stelsel moet kunnen**.
 
 ## Capability model
 
-De generieke functies uit het logisch architectuurmodel worden mogelik gemaakt met zogenaamde capabilities.
+De generieke functies uit het logisch architectuurmodel worden mogelijk gemaakt met zogenaamde capabilities.
 In de onderstaande diagram zijn de benodigde capabilities per generieke functie geschetst.
 
 --8<-- "diagrammen/container-capability-map.mmd"
@@ -18,48 +18,55 @@ Doel: betrouwbaar vaststellen wie een partij is en of deze vertrouwd kan worden.
 
 Capabilities:
 
-Identificatie van burgers
+### Identificatie van burgers
+Eisen aan identificatie:
+- Burger en overheid kan BSN gebruiken
+- Private partijen mogen geen BSN verwerken
+- Private partijen moeten wel gegevens van juiste burger ontvangen
+- Bronhouders moeten BSN weten om juiste gegevens te leveren
+- Mogen Europese overheden BSN verwerken? Hoe werkt SDG/OOTS?
 
-Identificatie van organisaties
+### Identificatie van organisaties
+OIN / KvK / Europa?
 
-Authenticatie van gebruikers
+### Authenticatie van gebruikers
+DigiD / EIDAS middelen
+Wallet
 
-Authenticatie van systemen
+### Authenticatie van systemen
+Certificaten
+QTSP
+eHerkenning / EIDAS middelen
 
-Federatieve identiteiten
-
-Vertrouwensketens
-
-Beheer van identiteitsattributen
-
-Verificatie van identiteit
+### Vertrouwensketens
+Trust providers
+PKIo?
+QTSP's?
+Credentials?
 
 
 ## Toegang & Interactie
 
-Doel: faciliteren van interactie tussen burgers, afnemers en bronhouders.
+Doel: faciliteren van veilige en eenvoudige interactie tussen burgers, afnemers en bronhouders.
 
 Capabilities:
 
-Initiëren van gegevensverzoeken
+### Initiëren van gegevensverzoeken
 
-Toegang verlenen tot gegevens
 
-Autorisatiecontrole
+### Toegang verlenen tot gegevens
+Via PBAC / AuthZen
+GraphQL voor datasets
 
-Toestemming registreren
+### Autorisatiecontrole
 
-Toestemming controleren
 
-Toestemming intrekken
+### Toestemming
+Toestemmingsvoorziening
+- verlenen
+- gebruiken
+- intrekken
 
-Verzoekroutering
-
-API-interactie
-
-Sessiebeheer
-
-Foutafhandeling
 
 
 ## Gegevensvoorziening
@@ -68,23 +75,15 @@ Doel: beschikbaar stellen van gegevens vanuit bronhouders.
 
 Capabilities:
 
-Registreren van gegevensbronnen
+### Gegevenstransport
+FSC
 
-Beschrijven van datasets
+### Services vindbaar
+FSC
 
-Gegevensverzoeken ontvangen
-
-Gegevens ophalen bij bronhouders
-
-Gegevens leveren aan afnemers
-
-Gegevens leveren aan wallets
-
-Gegevensminimalisatie
-
-Gegevensformattering
-
-Versiebeheer van gegevens
+### Beveiliging en privacy
+Encryptie
+Pseudonimiseren
 
 
 ## Semantiek & Eenheid van taal
@@ -93,17 +92,14 @@ Doel: zorgen dat gegevens overal dezelfde betekenis hebben.
 
 Capabilities:
 
-Beheer van informatiemodellen
+### Standaardisatie van gegevensstructuren
+FDS
 
-Beheer van begrippen en definities
+### Federatieve informatiemodellen
+FDS
 
-Mapping tussen datamodellen
-
-Standaardisatie van gegevensstructuren
-
-Semantische validatie
-
-Metadata beheer
+### Metadata beheer
+FDS
 
 
 ## Gegevenskwaliteit & Validatie
@@ -112,17 +108,12 @@ Doel: waarborgen dat gegevens betrouwbaar en bruikbaar zijn.
 
 Capabilities:
 
-Validatie van gegevens
+### Validatie van gegevens
+Digikoppeling REST profiel
 
-Controle op volledigheid
+Foutdetectie?
 
-Controle op actualiteit
-
-Controle op consistentie
-
-Foutdetectie
-
-Rapportage over datakwaliteit
+### Rapportage over datakwaliteit
 
 
 ## Gebruik & Juridische Grondslag
@@ -131,19 +122,15 @@ Doel: waarborgen dat gegevens rechtmatig gebruikt worden.
 
 Capabilities:
 
-Vaststellen juridische grondslag
+### Vaststellen juridische grondslag
+Policy in PBAC
+Toestemming / Wettelijke basis
 
-Beheer van gebruiksvoorwaarden
+### Controle op doelbinding
 
-Controle op doelbinding
 
-Privacybescherming
-
-Verantwoording van gegevensgebruik
-
-Audit van gegevensgebruik
-
-Logging van gebruik
+### Privacybescherming
+Pseudonimiseren
 
 
 ## Orkestratie & Integratie
@@ -152,19 +139,30 @@ Doel: coördineren van gegevensuitwisseling tussen partijen.
 
 Capabilities:
 
-Coördineren van gegevensstromen
+### Service discovery
+FSC
+Naamsconventies
 
-Service discovery
+### Integratie met externe systemen
 
-Integratie met externe systemen
 
-Protocolvertaling
+### Protocolvertaling
+"Adapters" voor specifieke stromen
 
-Workflowcoördinatie
 
-Eventafhandeling
+### Berichtenafhandeling
 
-Berichtenafhandeling
+
+## Logging en Verantwoording
+
+### Logging
+FDS logboek verwerkingen
+
+### Monitoring
+Zie beheer
+
+### Verantwoording
+Wie heeft welke verantwoordelijkheid?
 
 
 ## Beheer & Continuïteit
@@ -173,16 +171,20 @@ Doel: stabiele en betrouwbare werking van het stelsel.
 
 Capabilities:
 
-Logging en monitoring van dienstverlening
+### Logging en monitoring van dienstverlening
 
-Incidentbeheer
 
-Capaciteitsbeheer
+### Incidentbeheer
 
-Configuratiebeheer
 
-Continuïteitsbeheer
+### Capaciteitsbeheer
 
-Versiebeheer van interfaces
 
-Rapportage / verantwoording over gebruik
+### Configuratiebeheer
+
+
+### Continuïteitsbeheer
+
+
+### Versiebeheer van interfaces
+Hoe omgaan met versies?
