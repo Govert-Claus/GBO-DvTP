@@ -1,10 +1,10 @@
 # Generieke functies (logische architectuur)
 
-Capabilities worden gerealiseerd door **generieke functies**.
+De oplossingsrichting met generieke bronontsluiting wordt gerealiseerd door **generieke functies**.
 
 ## Overzicht generieke functies
 
-Uit de interactiepatronen en het capability model blijken de volgende generieke functies nodig.
+Uit de interactiepatronen blijken de volgende generieke functies nodig:
 
 1. Identiteit & Vertrouwen
 2. Toegang & Interactie
@@ -16,8 +16,6 @@ Uit de interactiepatronen en het capability model blijken de volgende generieke 
 8. Beheer & Continuïteit
 
 (hier mist "Logging & Verantwoording" dat vaak in architecturen specifieke aandacht krijgt. Hier lijkt dat impliciet in "Beheer & Continuïteit" te zitten, maar moet misschien expliciet gemaakt worden)
-
-
 
 
 ## Logisch architectuurdiagram
