@@ -122,4 +122,4 @@ Een burger vraagt een gegeven op als credential om in zijn/haar wallet op te nem
 
 ### Interactie
 
---8<-- "diagrammen/interactiepatroon-EDI_Wallet.mmd"
+--8<-- "diagrammen/interactiepatroon-EDI-Wallet.mmd"
