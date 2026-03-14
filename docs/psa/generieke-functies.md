@@ -24,4 +24,4 @@ Uit de interactiepatronen en het capability model blijken de volgende generieke 
 
 Het logische architectuurdiagram schetst de generieke functies ten opzichte van elkaar.
 
---8<-- "diagrammen/context-diagram.mmd"
+--8<-- "diagrammen/Architectuuroverzicht.mmd"

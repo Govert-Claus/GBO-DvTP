@@ -100,11 +100,11 @@ Een private dienstverlener haalt gegevens op bij een bronhouder op basis van een
 --8<-- "diagrammen/interactiepatroon-PP-haalt-gegevens-op.mmd"
 
 
-## Gegevensverzoek van burger om credential in wallet op te deelnemen
+## Gegevensverzoek van burger om credential via wallet te delen
 
 ### Doel
 
-Een burger vraagt een gegeven op als credential om in zijn/haar wallet op te nemen.
+Een burger vraagt een gegeven op als credential om in zijn/haar wallet op te nemen en te delen met een dienstverlener.
 
 ### Betrokken generieke functies
 
@@ -116,6 +116,7 @@ Een burger vraagt een gegeven op als credential om in zijn/haar wallet op te nem
 ### Actoren
 
 -   Burger
+-   Dienstverlener
 -   Integrator (optioneel)
 -   Autorisatievoorziening
 -   Bronhouder
