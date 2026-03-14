@@ -97,4 +97,29 @@ Een private dienstverlener haalt gegevens op bij een bronhouder op basis van een
 
 ### Interactie
 
---8<-- "diagrammen/interactiepatroon-gegevensverzoek.mmd"
+--8<-- "diagrammen/interactiepatroon-PP-haalt-gegevens-op.mmd"
+
+
+## Gegevensverzoek van burger om credential in wallet op te deelnemen
+
+### Doel
+
+Een burger vraagt een gegeven op als credential om in zijn/haar wallet op te nemen.
+
+### Betrokken generieke functies
+
+-   Autorisatie & Beleidsafdwinging
+-   Gegevensvoorziening
+-   Orkestratie & Integratie
+-   Logging & Verantwoording
+
+### Actoren
+
+-   Burger
+-   Integrator (optioneel)
+-   Autorisatievoorziening
+-   Bronhouder
+
+### Interactie
+
+--8<-- "diagrammen/interactiepatroon-EDI_Wallet.mmd"
