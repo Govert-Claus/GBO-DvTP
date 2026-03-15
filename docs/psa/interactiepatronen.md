@@ -148,7 +148,7 @@ Een Europese overheidsdienst vraagt een gegeven (Evidence Request) aan een Neder
 
 ### Interactie
 
---8<-- "diagrammen/interactiepatroon-SDG-OOTS.mmd"
+--8<-- "diagrammen/interactiepatroon-SDG-OOTS-verzoek.mmd"
 
 ### Toelichting
 
