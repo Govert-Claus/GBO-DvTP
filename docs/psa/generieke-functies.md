@@ -15,7 +15,9 @@ Uit de interactiepatronen blijken de volgenDe generieke functies nodig:
 7. Orkestratie & Integratie
 8. Beheer & Continuïteit
 
-(hier mist "Logging & Verantwoording" dat vaak in architecturen specifieke aandacht krijgt. Hier lijkt dat impliciet in "Beheer & Continuïteit" te zitten, maar moet misschien expliciet gemaakt worden)
+(hier mist "Logging & Verantwoording" dat vaak in architecturen specifieke aandacht krijgt. Hier lijkt dat impliciet in "Beheer & Continuïteit" te zitten, maar moet misschien expliciet gemaakt worden? In de [capabilities](./capabilities.md) komt het wel terug.)
+
+---
 
 
 ## Logisch architectuurdiagram
@@ -25,12 +27,11 @@ Het logische architectuurdiagram schetst De generieke functies ten opzichte van 
 --8<-- "diagrammen/Architectuuroverzicht.mmd"
 
 
-## Eisen aan generieke functies
+Aan de generieke functies worden eisen gesteld vanuit architectuur- en ontwerpprincipes, die hieronder zijn uitgewerkt. De eisen zijn bewust technologieneutraal geformuleerd; ze beschrijven *wat* een generieke functie moet kunnen, niet *hoe* dat gerealiseerd wordt.
 
-Aan De generieke functies worden eisen gesteld vanuit architectuur- en ontwerpprincipes, die hieronder zijn uitgewerkt. De eisen zijn bewust technologieneutraal geformuleerd; ze beschrijven *wat* een generieke functie moet kunnen, niet *hoe* dat gerealiseerd wordt.
+---
 
-
-### Generieke functie 1 — Toestemming & Grondslag
+## Generieke functie 1 — Toestemming & Grondslag
 
 **Doel:** Vaststellen en beheren van de juridische grondslag voor gegevensdeling, per traject (DvTP-toestemming, SDG/OOTS-wettelijke basis, eIDAS2-presentatie).
 
@@ -45,7 +46,7 @@ Aan De generieke functies worden eisen gesteld vanuit architectuur- en ontwerppr
 
 ---
 
-### Generieke functie 2 — Burgeridentificatie & Pseudonimisering
+## Generieke functie 2 — Burgeridentificatie & Pseudonimisering
 
 **Doel:** Het vaststellen van de identiteit van de burger ten behoeve van gegevensontsluiting, waarbij het BSN uitsluitend circuleert binnen de overheidsinfrastructuur en nooit zichtbaar is voor private afnemers.
 
@@ -60,7 +61,7 @@ Aan De generieke functies worden eisen gesteld vanuit architectuur- en ontwerppr
 
 ---
 
-### Generieke functie 3 — Vertrouwensstelsel & Authenticatie van organisaties
+## Generieke functie 3 — Vertrouwensstelsel & Authenticatie van organisaties
 
 **Doel:** Vaststellen dat een afnemende organisatie (dienstverlener, EU-lidstaat) daadwerkelijk is wie zij zegt te zijn, en bevoegd is om deel te nemen aan het desbetreffende traject.
 
@@ -74,7 +75,7 @@ Aan De generieke functies worden eisen gesteld vanuit architectuur- en ontwerppr
 
 ---
 
-### Generieke functie 4 — Toegangsbeleid & Autorisatie (PEP/PDP)
+## Generieke functie 4 — Toegangsbeleid & Autorisatie (PEP/PDP)
 
 **Doel:** Elke gegevensuitvraag wordt getoetst aan het geldende beleid, ongeacht het traject. De toetsing is geünificeerd, machineleesbaar en herleidbaar.
 
@@ -90,7 +91,7 @@ Aan De generieke functies worden eisen gesteld vanuit architectuur- en ontwerppr
 
 ---
 
-### Generieke functie 5 — Gegevensontsluiting (Bronontsluiting API)
+## Generieke functie 5 — Gegevensontsluiting (Bronontsluiting API)
 
 **Doel:** Bronhouders stellen hun gegevens beschikbaar via een gestandaardiseerde interface die door alle trajecten herbruikbaar is.
 
@@ -105,7 +106,7 @@ Aan De generieke functies worden eisen gesteld vanuit architectuur- en ontwerppr
 
 ---
 
-### Generieke functie 6 — Gegevensuitwisseling met EU (OOTS-brug)
+## Generieke functie 6 — Gegevensuitwisseling met EU (OOTS-brug)
 
 **Doel:** Grensoverschrijdende gegevensuitvraag conform de SDG-verordening, waarbij de bronhouder niet hoeft te weten of een verzoek binnenlands of grensoverschrijdend van origine is.
 
@@ -119,7 +120,7 @@ Aan De generieke functies worden eisen gesteld vanuit architectuur- en ontwerppr
 
 ---
 
-### Generieke functie 7 — Consent UI & Burger Interactie
+## Generieke functie 7 — Consent UI & Burger Interactie
 
 **Doel:** De burger geeft geïnformeerde, specifieke toestemming voor gegevensdeling, en kan die toestemming ook intrekken en inzien.
 
@@ -133,7 +134,7 @@ Aan De generieke functies worden eisen gesteld vanuit architectuur- en ontwerppr
 
 ---
 
-### Generieke functie 8 — Logging, Audit & Traceerbaarheid
+## Generieke functie 8 — Logging, Audit & Traceerbaarheid
 
 **Doel:** Iedere gegevensuitvraag is herleidbaar: wie heeft wanneer welke gegevens over welke burger opgevraagd, op basis van welke grondslag, met welk besluit.
 
@@ -147,7 +148,7 @@ Aan De generieke functies worden eisen gesteld vanuit architectuur- en ontwerppr
 
 ---
 
-### Generieke functie 9 — Semantiek & Gegevenskwaliteit
+## Generieke functie 9 — Semantiek & Gegevenskwaliteit
 
 **Doel:** Gegevens die via GBO worden uitgewisseld hebben een eenduidige, gedocumenteerde betekenis, ongeacht het traject of de afnemer.
 
@@ -160,7 +161,7 @@ Aan De generieke functies worden eisen gesteld vanuit architectuur- en ontwerppr
 
 ---
 
-### Samenhang
+## Samenhang
 
 De capabilities zijn niet op zichzelf staand. De onderstaande afhankelijkheden zijn architectureel kritiek:
 
