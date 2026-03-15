@@ -39,7 +39,7 @@ extra_javascript:
 plugins:
   - search
   - print-site:
-      add_to_navigation: true
+      add_to_navigation: false
       print_page_title: "PSA GBO / DvTP"
       enumerate_headings: true
 

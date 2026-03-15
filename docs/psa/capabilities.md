@@ -268,7 +268,8 @@ Naast technische gaps kent dit document ook **juridische randvoorwaarden** (gema
 
 > ℹ️ **iWlz precedent:** Het iWlz-afsprakenstelsel heeft TraceID/SpanID-correlatie (RFC0022a) en LDV-conforme logging als formeel vastgestelde RFC's opgenomen. Dit patroon is daarmee bewezen in productie voor gevoelige zorgdata en direct herbruikbaar als GBO-standaard voor gedistribueerde tracing.
 
-### Afspraken | Stelselafspraak | Centraal — GBO/FDS | ⚠️ Nog te maken als GBO-aansluiteis; LDV-standaard zelf beschikbaar |
+### Afspraken
+| Stelselafspraak | Centraal — GBO/FDS | ⚠️ Nog te maken als GBO-aansluiteis; LDV-standaard zelf beschikbaar |
 | Cross-component correlatie via gestandaardiseerde trace-identifier | Stelselafspraak | Centraal — GBO | ⚠️ Nog te maken als GBO-technisch profiel |
 | Burger heeft inzagerecht in verwerkingen; logstructuur maakt dit mogelijk | Stelselafspraak | Centraal — GBO, AVG art. 15 als basis | ⚠️ Inzagevoorziening voor burger nog te ontwerpen |
 | Wallet-lokale logs vallen buiten server-side correlatie | Architectuurafspraak | Centraal — GBO | ⚠️ Vast te leggen als GBO-architectuurkeuze |
