@@ -1,80 +1,9 @@
 # Interactiepatronen DvTP (PSA)
 
-Dit document beschrijft de belangrijkste interactiepatronen voor GBO/DvTP zoals afgeleid uit de use cases. De patronen zijn bedoeld voor gebruik in de PSA en zijn daarom **logisch (technologie‑onafhankelijk)** beschreven. In de patronen is op verschillende plekken sprake van een "dienst". In deze fase van ontwerp is nog niet besloten of dit afspraken, standaarden of centrale of decentrale voorzieningen zijn.  
+Dit document beschrijft de belangrijkste interactiepatronen voor GBO/DvTP zoals afgeleid uit de use cases. In de patronen is op verschillende plekken sprake van een "dienst"; dit kunnen standaarden of centrale of decentrale voorzieningen zijn. Daar wordt verderop in de PSA dieper op ingegaan.  
 
 
-## Identificatie en authenticatie van een actor
-
-### Doel
-
-Het vaststellen van de identiteit van een actor (bijv. burger of organisatie) voordat toegang wordt verleend tot functies van het stelsel.
-
-### Betrokken generieke functies
-
--   Identiteit & Vertrouwen
--   Toegang & Interactie
--   Autorisatie & Beleidsafdwinging
-
-### Actoren
-
--   Burger
--   Private dienstverlener
--   Identiteitsdienst
--   DvTP/GBO‑stelsel
-
-### Interactie
-
---8<-- "diagrammen/interactiepatroon-identificatie.mmd"
-
-
-## Toestemming geven en registreren
-
-### Doel
-
-Een burger geeft expliciete toestemming voor het delen van een specifieke dataset met een specifieke private dienstverlener.
-
-### Betrokken generieke functies
-
--   Toegang & Interactie
--   Identiteit & Vertrouwen
--   Gebruik & Juridische grondslag
--   Gegevensvoorziening
-
-### Actoren
-
--   Burger
--   Private dienstverlener
--   Toestemmingsdienst
--   Consentregister
-
-### Interactie
-
---8<-- "diagrammen/interactiepatroon-toestemming-geven.mmd"
-
-
-## Toestemming beheren of intrekken
-
-### Doel
-
-De burger kan een eerder gegeven toestemming bekijken en intrekken.
-
-### Betrokken generieke functies
-
--   Toegang & Interactie
--   Gebruik & Juridische grondslag
--   Logging & Verantwoording
-
-### Actoren
-
--   Burger
--   Toestemmingsvoorziening
--   Consentregister
-
-### Interactie
-
---8<-- "diagrammen/interactiepatroon-toestemming-intrekken.mmd"
-
-## Gegevensverzoek van afnemer naar bronhouder
+## Gegevensverzoek van private partij met toestemming aan bronhouder (DvTP)
 
 ### Doel
 
@@ -150,6 +79,7 @@ Een Europese overheidsdienst vraagt een gegeven (Evidence Request) aan een Neder
 
 --8<-- "diagrammen/interactiepatroon-SDG-OOTS-verzoek.mmd"
 
+
 ### Toelichting
 
 RINIS is het nationale toegangspunt voor eDelivery en verzorgt de basisinrichting OOTS — het Nederlandse toegangspunt en de generieke koppelingen met gerelateerde systemen. Dit is een transportrol: RINIS spreekt het AS4/eDelivery-protocol richting de EC Common Services en TESTA, en vertaalt dit naar een nationaal berichtformaat.  
@@ -158,3 +88,76 @@ GBO is een verwerkingsrol: identiteit, grondslag, toestemming, bronontsluiting, 
 De praktische knip zit op het grenswerk tussen fase 1 en fase 2 in het diagram: RINIS ontvangt het AS4-bericht van buiten, pakt de OOTS-payload uit en geeft die als REST-aanroep door aan GBO. Bij de terugkoppeling (fase 7) geldt het omgekeerde: GBO geeft de Evidence Response terug aan RINIS, die het opnieuw inpakt in AS4 voor verzending via TESTA. Bronhouders zien uitsluitend de GBO-API — OOTS-kennis is voor hen niet nodig.  
 
 NB: Openstaand architectuurvraagstuk is nog waar de OOTS-specifieke toestemmingsflow (het "preview"-scherm dat de burger het bewijsstuk laat zien vóór afgifte, verplicht per SDG-verordening) belegd wordt. Momenteel zit dit in de RINIS-basisinrichting. Als GBO/DvTP de toestemming afhandelt, moeten we afspreken of het OOTS-preview-scherm bij RINIS blijft of naar GBO verschuift — dat raakt de verantwoordelijkheidsverdeling tussen de twee voorzieningen.
+
+
+
+## Identificatie en authenticatie van een actor
+
+### Doel
+
+Het vaststellen van de identiteit van een actor (bijv. burger of organisatie) voordat toegang wordt verleend tot functies van het stelsel.
+
+### Betrokken generieke functies
+
+-   Identiteit & Vertrouwen
+-   Toegang & Interactie
+-   Autorisatie & Beleidsafdwinging
+
+### Actoren
+
+-   Burger
+-   Private dienstverlener
+-   Identiteitsdienst
+-   DvTP/GBO‑stelsel
+
+### Interactie
+
+--8<-- "diagrammen/interactiepatroon-identificatie.mmd"
+
+
+## Toestemming geven en registreren
+
+### Doel
+
+Een burger geeft expliciete toestemming voor het delen van een specifieke dataset met een specifieke private dienstverlener.
+
+### Betrokken generieke functies
+
+-   Toegang & Interactie
+-   Identiteit & Vertrouwen
+-   Gebruik & Juridische grondslag
+-   Gegevensvoorziening
+
+### Actoren
+
+-   Burger
+-   Private dienstverlener
+-   Toestemmingsdienst
+-   Consentregister
+
+### Interactie
+
+--8<-- "diagrammen/interactiepatroon-toestemming-geven.mmd"
+
+
+## Toestemming beheren of intrekken
+
+### Doel
+
+De burger kan een eerder gegeven toestemming bekijken en intrekken.
+
+### Betrokken generieke functies
+
+-   Toegang & Interactie
+-   Gebruik & Juridische grondslag
+-   Logging & Verantwoording
+
+### Actoren
+
+-   Burger
+-   Toestemmingsvoorziening
+-   Consentregister
+
+### Interactie
+
+--8<-- "diagrammen/interactiepatroon-toestemming-intrekken.mmd"
