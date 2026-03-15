@@ -124,3 +124,37 @@ Een burger vraagt een gegeven op als credential om in zijn/haar wallet op te nem
 ### Interactie
 
 --8<-- "diagrammen/interactiepatroon-EDI-Wallet.mmd"
+
+
+## Gegevensverzoek van Europese overheidsdienst aan Nederlandse overheidsbron
+
+### Doel
+
+Een Europese overheidsdienst vraagt een gegeven (Evidence Request) aan een Nederlandse overheidsbron om een dienst aan een Nederlandse burger te kunnen leveren.
+
+### Betrokken generieke functies
+
+-   Autorisatie & Beleidsafdwinging
+-   Gegevensvoorziening
+-   Orkestratie & Integratie
+-   Logging & Verantwoording
+
+### Actoren
+
+-   Burger
+-   Europese overheidsdienst
+-   Autorisatievoorziening
+-   Bronhouder
+
+### Interactie
+
+--8<-- "diagrammen/interactiepatroon-SDG-OOTS.mmd"
+
+### Toelichting
+
+RINIS is het nationale toegangspunt voor eDelivery en verzorgt de basisinrichting OOTS — het Nederlandse toegangspunt en de generieke koppelingen met gerelateerde systemen. Dit is een transportrol: RINIS spreekt het AS4/eDelivery-protocol richting de EC Common Services en TESTA, en vertaalt dit naar een nationaal berichtformaat.  
+GBO is een verwerkingsrol: identiteit, grondslag, toestemming, bronontsluiting, semantiek. Dit zijn inhoudelijke functies, geen transport.  
+
+De praktische knip zit op het grenswerk tussen fase 1 en fase 2 in het diagram: RINIS ontvangt het AS4-bericht van buiten, pakt de OOTS-payload uit en geeft die als REST-aanroep door aan GBO. Bij de terugkoppeling (fase 7) geldt het omgekeerde: GBO geeft de Evidence Response terug aan RINIS, die het opnieuw inpakt in AS4 voor verzending via TESTA. Bronhouders zien uitsluitend de GBO-API — OOTS-kennis is voor hen niet nodig.  
+
+NB: Openstaand architectuurvraagstuk is nog waar de OOTS-specifieke toestemmingsflow (het "preview"-scherm dat de burger het bewijsstuk laat zien vóór afgifte, verplicht per SDG-verordening) belegd wordt. Momenteel zit dit in de RINIS-basisinrichting. Als GBO/DvTP de toestemming afhandelt, moeten we afspreken of het OOTS-preview-scherm bij RINIS blijft of naar GBO verschuift — dat raakt de verantwoordelijkheidsverdeling tussen de twee voorzieningen.

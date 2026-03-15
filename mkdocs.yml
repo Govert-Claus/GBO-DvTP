@@ -51,8 +51,9 @@ nav:
   - PSA:
     - Inleiding: psa/inleiding.md
     - Context: psa/context.md
-    - Architectuurprincipes: psa/architectuurprincipes.md
     - Ecosysteem en oplossingsrichting: psa/ecosysteem.md
+    - Architectuurprincipes: psa/architectuurprincipes.md
+    - Ontwerpprincipes: psa/ontwerpprincipes.md
     - Interactiepatronen: psa/interactiepatronen.md
     - Logische architectuur: psa/generieke-functies.md
     - Capabilities: psa/capabilities.md
