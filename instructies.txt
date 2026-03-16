@@ -1,8 +1,0 @@
-in prompt:
-
-cd /Users/govertclaus/Library/CloudStorage/OneDrive-Persoonlijk/Documenten/ICTU/DvTP GBO/GBO-DvTP
-source mkdocs/bin/activate
-mkdocs serve
-
-Ga naar:
-http://127.0.0.1:8000
