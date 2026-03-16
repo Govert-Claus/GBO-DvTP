@@ -6,7 +6,7 @@ sequenceDiagram
     autonumber
     participant EU as EU dienst<br/>(SDG/OOTS)
     participant RINIS as RINIS<br/>(nationaal OOTS-punt)
-    participant GBO as GBO<br/>(DvTP voorziening)
+    participant GBO as GBO/DvTP<br/>(GBO voorziening)
     participant BRG as Burger<br/>(rechthebbende)
     participant BRH as Bronhouder<br/>(BRP / DUO / …)
 
@@ -40,7 +40,7 @@ sequenceDiagram
 
     rect rgb(250, 238, 218)
         Note over GBO: ⑥ Semantische mapping & logging (intern GBO)
-        Note over GBO: GGM → SDG Evidence type · audit log · doelbinding
+        Note over GBO: GBO-formaat → SDG Evidence type · audit log · doelbinding
     end
 
     rect rgb(230, 241, 251)
