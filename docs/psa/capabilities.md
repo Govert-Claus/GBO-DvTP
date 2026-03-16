@@ -103,7 +103,7 @@ Naast technische gaps kent dit document ook **juridische randvoorwaarden** (gema
 | Afspraak | Type | Beheer | Invulling |
 |---|---|---|---|
 | Welke certificaattypen / trust anchors geaccepteerd worden per traject | Stelselafspraak | Centraal — GBO/FDS | PKI Overheid als basis voor binnenlands; eIDAS Trusted List voor grensoverschrijdend; ⚠️ profiel nog te maken |
-| Onboardingproces dienstverleners (registratie, contractering, certificaatuitgifte) | Toetredingsafspraak | Centraal — GBO-stelsel, aansluiting FDS | ⚠️ Nog te maken als GBO-toetredingsprocedure |
+| Onboardingproces dienstverleners (registratie, contractering, certificaatuitgifte) | Toetredingsafspraak | Centraal — GBO-stelsel, aansluiting FDS/TIP | ⚠️ Nog te maken als GBO-toetredingsprocedure |
 | Erkenning QTSP-uitgegeven attestaties en gekwalificeerde zegels als vertrouwensanker | Stelselafspraak | Centraal — GBO, verankerd in eIDAS | Basis aanwezig via eIDAS; ⚠️ GBO-specifiek beleidsprofiel voor PDP-verificatie nog te maken |
 | Wederzijdse erkenning organisatie-identifiers (OIN, KvK, EIDAS NTRNL) | Stelselafspraak | Centraal — FDS / Logius OIN-register | OIN-register beschikbaar; ⚠️ koppeling KvK ↔ OIN ↔ eIDAS-identifier nog niet gestandaardiseerd |
 
@@ -146,7 +146,7 @@ Naast technische gaps kent dit document ook **juridische randvoorwaarden** (gema
 | Standaard | Beheer | Bestaande invulling |
 |---|---|---|
 | AuthZEN (OpenID Foundation, draft) — gestandaardiseerde interface tussen PEP en PDP | OpenID Foundation | Draft-standaard; FTV (Federatieve Toegangsverlenig, Logius) loopt pilot |
-| OPA/Rego — machineleesbare beleidstaal voor PDP-evaluatie | Open Policy Agent / CNCF | **In productie bij iWlz** (ZIN/Ketenbureau iWlz) voor gevoelige zorgdata; directe precedentwaarde |
+| OPA/Rego — machineleesbare beleidstaal voor PDP-evaluatie | Open Policy Agent / CNCF | **In productie bij iWlz** (ZIN/Vecozo) voor gevoelige zorgdata; directe precedentwaarde |
 | XACML 3.0 — alternatieve PDP-standaard (minder actueel, maar breed ingezet) | OASIS | Beschikbaar; minder geschikt voor fine-grained data-access dan OPA/Rego |
 | PBAC (Policy-Based Access Control) als autorisatieparadigma | Conceptueel kader | Beschreven in FTV-architectuur; aansluiting GBO gewenst |
 
@@ -180,7 +180,7 @@ Naast technische gaps kent dit document ook **juridische randvoorwaarden** (gema
 
 | Standaard | Beheer | Bestaande invulling |
 |---|---|---|
-| FSC (Federated Service Connectivity) — binnenlands koppelnetwerk voor REST/HTTP | Logius / FSC-community | **Beschikbaar en in gebruik** binnen overheid; standaard voor domestiek verkeer in FDS |
+| Digikoppeling met FSC (Federated Service Connectivity) | Logius / RINIS | **Beschikbaar en in gebruik** binnen overheid; standaard voor domestiek verkeer in FDS |
 | GraphQL — selectieve gegevensuitvraag op basis van geregistreerde schema's | GraphQL Foundation | Beschikbaar; **in productie bij iWlz**; nog niet opgenomen in FDS standaardenlandkaart als datadienst-type — ⚠️ positionering als FDS-datadienst-type nog nodig |
 | DCAT-AP NL — datacatalogus beschrijving | Geonovum / FDS | **Beschikbaar en verplicht** binnen FDS |
 | NL API Strategie / REST API Design Rules | Geonovum / Kennisplatform API's | **Beschikbaar en verplicht** binnen overheid; GraphQL loopt over HTTP en is hiermee verenigbaar |
