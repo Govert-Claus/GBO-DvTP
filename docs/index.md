@@ -21,11 +21,13 @@ De PSA is als volgt opgebouwd:
 * **[Inleiding](psa/inleiding.md)**: Doel en scope van dit document.
 * **[Context](psa/context.md)**: De omgeving waarin het project landt.
 * **[Architectuurprincipes](psa/architectuurprincipes.md)**: De kaders waaraan de oplossing moet voldoen.
-* **[Ecosysteem](psa/ecosysteem.md)**: Het systeem (rollen en relaties) waar we naar kijken.
+* **[Ontwerpprincipes](psa/ontwerpprincipes.md)**: De kaders waaraan het technische ontwerp van de oplossing moet voldoen.
+* **[Ecosysteem en oplossingsrichting](psa/ecosysteem.md)**: Het systeem (rollen en relaties) waar we naar kijken en welke oplossingsrchting we voor ogen hebben.
 * **[Interactiepatronen](psa/interactiepatronen.md)**: De interactiepatronen die uit de use cases volgen en die de oplossing moet ondersteunen.
 * **[Logische architectuur](psa/generieke-functies.md)**: De generieke functies waar de oplossing uit bestaat.
-* **[Capabilities](psa/capabilities.md)**: De capabiltities/ bedrijfsfuncties die de generieke functies invullen.
+* **[Capabilities](psa/capabilities.md)**: De capabiltities/ bedrijfsfuncties die de generieke functies invullen en waar het GBO stelsel inrichting aan moet geven.
 * **[Realisatiestrategie](psa/realisatiestrategie.md)**: De strategie om de oplossing te realiseren en te implementeren.
+* **[Open vraagstukken en ontwerpkeuzes](psa/vraagstukken.md)**: Vraagstukken waarvoor nog geen oplossing is gevonden of keuze is gemaakt. Als er een oplossing is gevonden of een keuze is gemaakt, wordt deze in dit hoofdstuk vastgelegd en in het technisch ontwerp uitgewerkt.
 
 
 ---
