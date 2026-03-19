@@ -27,7 +27,7 @@ De PSA is als volgt opgebouwd:
 * **[Logische architectuur](psa/generieke-functies.md)**: De generieke functies waar de oplossing uit bestaat.
 * **[Capabilities](psa/capabilities.md)**: De capabiltities/ bedrijfsfuncties die de generieke functies invullen en waar het GBO stelsel inrichting aan moet geven.
 * **[Realisatiestrategie](psa/realisatiestrategie.md)**: De strategie om de oplossing te realiseren en te implementeren.
-* **[Open vraagstukken en ontwerpkeuzes](psa/vraagstukken.md)**: Vraagstukken waarvoor nog geen oplossing is gevonden of keuze is gemaakt. Als er een oplossing is gevonden of een keuze is gemaakt, wordt deze in dit hoofdstuk vastgelegd en in het technisch ontwerp uitgewerkt.
+* **[Vraagstukken en ontwerpkeuzes](psa/vraagstukken.md)**: Vraagstukken waarvoor nog geen oplossing is gevonden of keuze is gemaakt. Als er een oplossing is gevonden of een keuze is gemaakt, wordt deze in dit hoofdstuk vastgelegd als ontwerpkeuze en in het technisch ontwerp uitgewerkt.
 
 
 ---

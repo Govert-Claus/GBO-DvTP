@@ -27,6 +27,15 @@ Welke partijen mogen deelnemen, hoe worden ze geaccrediteerd, welke niveaus van 
 De wettelijke grondslag (via Wdo/AMvB), de technische implementatie (toestemmingsregister, tokens, TTL), intrekking, en het onderscheid met OOTS waar toestemming een "verklaring van instemming" is, en de wallet waar de burger zelf de credential beheert.
 
 
+## Gekwalificeerde elektronische attesteringen van attributen
+
+Hoe laten we attributen elektronisch kwalificeren? Dit is nodig voor de Wallet, maar mogelijk ook voor de andere use cases. Er is [Europese Wetgeving](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202501569), maar die laat nog ruimte wie welke rol invult.  
+
+- Gebruik QTSP?
+- Inrichten Pub-EEA?
+- Centrale verificatiedienst?
+
+
 ## Transformatie-architectuur
 
 Hoe één bronhouder-API leidt tot drie verschillende afnemerprotocollen (DvTP/REST+OAuth, OOTS/AS4+eDelivery, Wallet/OID4VC)? Dit is het technische hart van de "bronhouder één keer, afnemer naar wens"-ambitie.
