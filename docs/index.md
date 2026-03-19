@@ -1,6 +1,6 @@
-# Project Start Architectuur (PSA) - GBO/DvTP
+# Project Start Architectuur (PSA) - GBO
 
-Welkom bij de Project Start Architectuur voor GBO/DvTP. Dit document beschrijft de architectuurkaders, principes en interactiepatronen die van toepassing zijn op dit project.
+Welkom bij de Project Start Architectuur voor GBO. Dit document beschrijft de architectuurkaders, principes en interactiepatronen die van toepassing zijn op dit project.
 
 ## Over dit document
 Deze PSA is opgebouwd uit verschillende modules om het beheer overzichtelijk te houden. Aan de linkerkant (of via het menu bovenin) kun je door de verschillende hoofdstukken navigeren.

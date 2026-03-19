@@ -61,7 +61,7 @@ Om de problemen uit de vorige paragraaf op te lossen wordt een stelsel (een verz
 - bronhouders alleen verstrekken na verificatie van een geldig verzoek en binnen een afgebakend doel, met waarborgen voor integriteit en herleidbaarheid.
 
 
-De doelstellingen van het GBO/DvTP stelsel zijn:
+De doelstellingen van het GBO stelsel zijn:
 
 - Een lagere implementatielast voor bronhouders
 

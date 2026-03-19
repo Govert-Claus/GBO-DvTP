@@ -1,6 +1,6 @@
 publiccodeYmlVersion: "0.1"
 
-name: PSA GBO/DvTP
+name: PSA GBO
 url: "https://github.com/ICTU/psa-gbo-dvtp.git"
 # softwareVersion: "1.0"    # Optional
 releaseDate: "tbd"
@@ -18,7 +18,7 @@ description:
  en:
    # localisedName: github-policy   # Optional
    shortDescription: >
-         Project Startarchitectuur GBO/DvTP
+         Project Startarchitectuur GBO
 
    longDescription: >
          Architectuur voor het project Gemeenschappelijke Bronontsluiting (GBO) / Data delen via toestemming aan private partijen (DvTP)

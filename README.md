@@ -61,7 +61,7 @@ Bijdragen aan deze architectuur kunnen worden gedaan via:
 
 # Contact
 
-Eigenaar: project GBO/DvTP
+Eigenaar: project GBO
 Contactpersoon: [Govert Claus](mailto:govert.claus@ictu.nl)
 
 
