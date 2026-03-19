@@ -58,7 +58,7 @@ nav:
     - Logische architectuur: psa/generieke-functies.md
     - Capabilities: psa/capabilities.md
     - Realisatiestrategie: psa/realisatiestrategie.md
-    - Open Vraagstukken: psa/open-vraagstukken.md
+    - Open Vraagstukken en ontwerpkeuzes: psa/open-vraagstukken.md
 
   - Use Cases:
     - Zorgeloos Vastgoed: use-cases/zorgeloos-vastgoed.md
