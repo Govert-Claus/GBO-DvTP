@@ -196,16 +196,16 @@ Naast technische gaps kent dit document ook **juridische randvoorwaarden** (gema
 
 ---
 
-## Capability 6 — Grensoverschrijdende gegevensuitwisseling (OOTS-brug)
+## Capability 6 — Grensoverschrijdende gegevensuitwisseling (OOTS-adapter)
 
-*Verzoeken vanuit andere EU-lidstaten via het OOTS-stelsel worden vertaald naar het binnenlandse GBO-protocol. Bronhouders zien geen EU-specifiek transport. De brug is een EU-rechtelijke verplichting.*
+*Verzoeken vanuit andere EU-lidstaten via het OOTS-stelsel worden vertaald naar het binnenlandse GBO-protocol. Bronhouders zien geen EU-specifiek transport. De adapter is een EU-rechtelijke verplichting.*
 
 ### Afspraken
 
 | Afspraak | Type | Beheer | Invulling |
 |---|---|---|---|
-| De OOTS-brug is de enige AS4-toegangspoort; binnenlands verkeer gebruikt FSC direct | Architectuurafspraak | Centraal — GBO | ⚠️ Nog te maken als GBO-architectuurprincipe |
-| SMP-registratie van GBO-bronhouders voor OOTS-discovery wordt centraal beheerd door de brug | Stelselafspraak | Centraal — GBO | ⚠️ Nog te maken |
+| De OOTS-adapter is de enige AS4-toegangspoort; binnenlands verkeer gebruikt FSC direct | Architectuurafspraak | Centraal — GBO | ⚠️ Nog te maken als GBO-architectuurprincipe |
+| SMP-registratie van GBO-bronhouders voor OOTS-discovery wordt centraal beheerd | Stelselafspraak | Centraal — GBO | ⚠️ Nog te maken |
 | Autorisatie van OOTS-verzoeken doorloopt dezelfde PEP/PDP-keten als binnenlandse verzoeken | Architectuurafspraak | Centraal — GBO | ⚠️ Nog te maken als GBO-architectuurprincipe |
 
 ### Standaarden
@@ -269,6 +269,7 @@ Naast technische gaps kent dit document ook **juridische randvoorwaarden** (gema
 > ℹ️ **iWlz precedent:** Het iWlz-afsprakenstelsel heeft TraceID/SpanID-correlatie (RFC0022a) en LDV-conforme logging als formeel vastgestelde RFC's opgenomen. Dit patroon is daarmee bewezen in productie voor gevoelige zorgdata en direct herbruikbaar als GBO-standaard voor gedistribueerde tracing.
 
 ### Afspraken
+
 | Stelselafspraak | Centraal — GBO/FDS | ⚠️ Nog te maken als GBO-aansluiteis; LDV-standaard zelf beschikbaar |
 | Cross-component correlatie via gestandaardiseerde trace-identifier | Stelselafspraak | Centraal — GBO | ⚠️ Nog te maken als GBO-technisch profiel |
 | Burger heeft inzagerecht in verwerkingen; logstructuur maakt dit mogelijk | Stelselafspraak | Centraal — GBO, AVG art. 15 als basis | ⚠️ Inzagevoorziening voor burger nog te ontwerpen |
@@ -339,7 +340,7 @@ De gaps zijn onderverdeeld in drie categorieën:
 | 3 — Vertrouwensstelsel | — | GBO-vertrouwensprofiel (welke trust anchors per traject); OIN ↔ KvK ↔ eIDAS-identifier koppeling; GBO-aansluitvoorwaarden | FDS Poortwachter; FDS Marktmeester; FSC Directory; PKI Overheid; OIN-register |
 | 4 — Autorisatie (PEP/PDP) | — | Volledige PEP/PDP/PIP-keten nog te realiseren; GBO AuthZEN-profiel; Policy Store; BSN-resolving post-decision | OPA/Rego (iWlz, productie); FTV/AuthZEN (pilot) |
 | 5 — Bronontsluiting API | — | Query Template Registry; GraphQL als FDS-datadienst-type positioneren; GBO onboardingprocedure bronhouders | FSC (productie); FDS Poortwachter; DCAT-AP NL; iWlz GraphQL-patroon |
-| 6 — OOTS-brug | — | OOTS-EDM Adapter; SMP Publisher; operationele inrichting Domibus voor GBO | Domibus (open source, EC); AS4/OOTS-EDM standaarden |
+| 6 — OOTS-adapter | — | OOTS-EDM Adapter; SMP Publisher; operationele inrichting Domibus voor GBO | Domibus (open source, EC); AS4/OOTS-EDM standaarden |
 | 7 — Toestemmingsportaal | Wdo-grondslag DvTP; wettelijke verankering vrijwilligheidseis en gelijkwaardig alternatief als aansluiteis | Portaal zelf; BSNk-onboarding portaal; UX-richtlijnen toestemmingspresentatie; transparantie-eis uitwerking | DigiD; BSNk Activate |
 | 8 — Logging & Audit | — | LDV-profiel per GBO-component; inzagevoorziening burger | LDV-standaard; OpenTelemetry; iWlz TraceID/SpanID RFC (productie) |
 | 9 — Semantiek | — | Schema Registry; serialisatie-service; mappings naar OOTS-EDM en PuB-EAA | FDS Datacatalogus; DCAT-AP NL; OOTS-EDM |
@@ -355,7 +356,7 @@ De aanbevolen lagenstructuur voor het GBO-afsprakenstelsel, analoog aan iWlz:
 | Laag | Inhoud voor GBO |
 |---|---|
 | Organisatiebeleid | Governance, rollen (bronhouder, afnemer, GBO-beheer), ontwerpkeuzes, serviceafspraken, wijzigingsbeheer |
-| Proces | GBO-trajectprocessen: DvTP-toestemmingsstroom, OOTS-brugstroom, EDI-wallet uitgifte- en presentatiestroom |
+| Proces | GBO-trajectprocessen: DvTP-toestemmingsstroom, OOTS-stroom, EDI-wallet uitgifte- en presentatiestroom |
 | Informatie | Gegevensmodellen per bronhouder, canonieke schema's, mappings naar OOTS-EDM en PuB-EAA |
 | Applicatie | Technische afspraken per capability: PEP/PDP-keten, FSC-profiel, BSNk PP-integratie, query-templates |
 | IT-infrastructuur | Connectiviteit (FSC), certificaten (PKI Overheid), netwerkeisen, SLA's |
