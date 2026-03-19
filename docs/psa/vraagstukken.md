@@ -29,9 +29,10 @@ De wettelijke grondslag (via Wdo/AMvB), de technische implementatie (toestemming
 
 ## Gekwalificeerde elektronische attesteringen van attributen
 
-Hoe laten we attributen elektronisch kwalificeren? Dit is nodig voor de Wallet, maar mogelijk ook voor de andere use cases. Er is [Europese Wetgeving](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202501569), maar die laat nog ruimte wie welke rol invult.  
+Hoe laten we attributen elektronisch kwalificeren? Hoe wordt de "attesteringsuitgifte" ingericht?  
+Dit is nodig voor de Wallet, maar mogelijk ook voor de andere use cases. Er is [Europese Wetgeving](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202501569), maar die laat nog ruimte voor de inrichting en wie welke rol invult.  
 
-- Gebruik QTSP?
+- Gebruik QEAA / QTSP?
 - Inrichten Pub-EEA?
 - Centrale verificatiedienst?
 
