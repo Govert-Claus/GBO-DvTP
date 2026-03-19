@@ -1,14 +1,16 @@
 # Project Start Architectuur (PSA)
 
-## Delen via Toestemming naar Private Partijen / Generieke BronOntsluiting (DvTP/GBO)
+## Delen via Toestemming naar Private Partijen (DvTP) / Generieke BronOntsluiting (GBO)
 
 Deze repository bevat de **Project Start Architectuur (PSA)** voor het programma **DvTP/GBO**.
 
-DvTP/GBO heeft als doel een **generieke infrastructuur en afsprakenstelsel** te realiseren waarmee gegevens van overheidsorganisaties beschikbaar kunnen worden gemaakt voor:
+GBO heeft als doel een **generieke infrastructuur en afsprakenstelsel** te realiseren waarmee gegevens van overheidsorganisaties beschikbaar kunnen worden gemaakt voor:
 
 * burgers
 * private partijen
 * Europese toepassingen zoals **EDI Wallet** en **Single Digital Gateway (SDG/OOTS)**
+
+De gegevensuitwisseling met private partijen is hierin speciaal, omdat hier geen wettelijke verplichting aan verbonden is. Daar is enerzijds meer ruimte om de inrichting vorm te geven, maar anderzijds minder verplichting om deze inrichting daadwerkelijk te volgen. Daarom wordt dit specifiek opgepakt onder de naam DvTP (Delen via Toestemming naar Private Partijen).
 
 De PSA beschrijft:
 

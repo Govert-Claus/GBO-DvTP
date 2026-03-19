@@ -108,7 +108,7 @@ Het vaststellen van de identiteit van een actor (bijv. burger of organisatie) vo
 -   Burger
 -   Private dienstverlener
 -   Identiteitsdienst
--   DvTP/GBO‑stelsel
+-   GBO‑stelsel
 
 ### Interactie
 

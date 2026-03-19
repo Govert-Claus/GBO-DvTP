@@ -3,7 +3,7 @@
 ## Doel van dit document
 
 Dit document beschrijft de Project Start Architectuur (PSA) voor het
-programma **DvTP/GBO**.
+programma **GBO**.
 
 De PSA beschrijft **wat de oplossing moet kunnen**, maar legt nog geen technische implementatie vast.
 
