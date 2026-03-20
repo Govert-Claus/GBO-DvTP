@@ -2,7 +2,7 @@
 
 ## Actoren
 
-De volgende actoren spelen een rol bij het delen van gegevens in de context die in het vorige hoofdstuk is beschreven:
+De volgende actoren spelen een rol bij het delen van gegevens in de context die eerder is beschreven:
 
 -   Burger  
 
@@ -41,3 +41,5 @@ In de contextdiagram worden de actoren ten opzichte van elkaar en van het GBO st
 Zoals in de contextdiagram wordt geschetst worden de gegevens van de bronhouder via het GBO stelsel voor drie doelen gebruikt. Dit ontlast de bronhouder en maakt hergebruik van gegevens eenvoudiger. Ook als er meer doelen bijkomen vormt deze opzet een oplossing die hergebruikt kan worden.
 
 Om deze oplossing mogelijk te maken zal het stelsel een aantal interactiepatronen moeten ondersteunen. Het achterhalen van deze interactiepatronen gebeurt via use cases, die in de bijlage zijn uitgewerkt. De interactiepatronen worden in het volgende hoofdstuk besproken.
+
+In het volgende hoofdstuk worden eerst de kaders van de oplossing besproken: de architectuur- en ontwerpprincipes waar de oplossing rekening mee moet houden.  
