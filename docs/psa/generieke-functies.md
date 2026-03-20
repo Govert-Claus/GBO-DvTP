@@ -1,4 +1,4 @@
-# Generieke functies (logische architectuur)
+# Logische architectuur (generieke functies)
 
 De oplossingsrichting met generieke bronontsluiting wordt gerealiseerd door **generieke functies**.
 
@@ -15,7 +15,7 @@ Uit de interactiepatronen blijken de volgenDe generieke functies nodig:
 7. Orkestratie & Integratie
 8. Beheer & Continuïteit
 
-(hier mist "Logging & Verantwoording" dat vaak in architecturen specifieke aandacht krijgt. Hier lijkt dat impliciet in "Beheer & Continuïteit" te zitten, maar moet misschien expliciet gemaakt worden? In de [capabilities](./capabilities.md) komt het wel terug.)
+> hier mist "Logging & Verantwoording" dat vaak in architecturen specifieke aandacht krijgt. Hier zit dat impliciet in "Beheer & Continuïteit", maar moet misschien expliciet gemaakt worden? In de [capabilities](./capabilities.md) komt het wel terug.
 
 ---
 
@@ -26,8 +26,7 @@ Het logische architectuurdiagram schetst De generieke functies ten opzichte van 
 
 --8<-- "diagrammen/Architectuuroverzicht.mmd"
 
-
-Aan de generieke functies worden eisen gesteld vanuit architectuur- en ontwerpprincipes, die hieronder zijn uitgewerkt. De eisen zijn bewust technologieneutraal geformuleerd; ze beschrijven *wat* een generieke functie moet kunnen, niet *hoe* dat gerealiseerd wordt.
+Vanuit de [architectuur- en ontwerpprincipes](./architectuurprincipes.md) worden aan de generieke functies eisen gesteld, die hieronder zijn uitgewerkt. De eisen zijn bewust technologieneutraal geformuleerd; ze beschrijven *wat* een generieke functie moet kunnen, niet *hoe* dat gerealiseerd wordt.
 
 ---
 
