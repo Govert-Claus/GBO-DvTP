@@ -1,0 +1,1137 @@
+
+<!doctype html>
+<html lang="nl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../ecosysteem/">
+      
+      
+        <link rel="next" href="../generieke-functies/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>Interactiepatronen - PSA GBO</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings1.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings2.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings3.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings4.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings5.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings6.css">
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/pdf.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interactiepatronen-dvtp-psa" class="md-skip">
+          Ga naar inhoud
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="PSA GBO" class="md-header__button md-logo" aria-label="PSA GBO" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PSA GBO
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Interactiepatronen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Zoeken" placeholder="Zoeken" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Zoeken">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Leegmaken" aria-label="Leegmaken" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Zoeken initialiseren
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigatie" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PSA GBO" class="md-nav__button md-logo" aria-label="PSA GBO" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    PSA GBO
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../voorblad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Voorblad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Over dit document
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    PSA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            PSA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inleiding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inleiding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../context/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Context
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architectuurprincipes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architectuurprincipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ontwerpprincipes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ontwerpprincipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ecosysteem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ecosysteem en oplossingsrichting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Interactiepatronen
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Interactiepatronen
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gegevensverzoek-van-private-partij-met-toestemming-aan-bronhouder-dvtp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gegevensverzoek van private partij met toestemming aan bronhouder (DvTP)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gegevensverzoek-van-burger-om-credential-via-wallet-te-delen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gegevensverzoek van burger om credential via wallet te delen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gegevensverzoek-van-europese-overheidsdienst-aan-nederlandse-overheidsbron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gegevensverzoek van Europese overheidsdienst aan Nederlandse overheidsbron
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identificatie-en-authenticatie-van-een-actor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificatie en authenticatie van een actor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toestemming-geven-en-registreren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Toestemming geven en registreren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toestemming-beheren-of-intrekken" class="md-nav__link">
+    <span class="md-ellipsis">
+      Toestemming beheren of intrekken
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generieke-functies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logische architectuur
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capabilities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Capabilities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realisatiestrategie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Realisatiestrategie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vraagstukken/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Vraagstukken en ontwerpkeuzes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Use Cases
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Use Cases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-cases/zorgeloos-vastgoed/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zorgeloos Vastgoed
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-cases/lvg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gebruik vastgoedgegevens
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhoudsopgave
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gegevensverzoek-van-private-partij-met-toestemming-aan-bronhouder-dvtp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gegevensverzoek van private partij met toestemming aan bronhouder (DvTP)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gegevensverzoek-van-burger-om-credential-via-wallet-te-delen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gegevensverzoek van burger om credential via wallet te delen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gegevensverzoek-van-europese-overheidsdienst-aan-nederlandse-overheidsbron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gegevensverzoek van Europese overheidsdienst aan Nederlandse overheidsbron
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identificatie-en-authenticatie-van-een-actor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificatie en authenticatie van een actor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toestemming-geven-en-registreren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Toestemming geven en registreren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toestemming-beheren-of-intrekken" class="md-nav__link">
+    <span class="md-ellipsis">
+      Toestemming beheren of intrekken
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="interactiepatronen-dvtp-psa">Interactiepatronen DvTP (PSA)<a class="headerlink" href="#interactiepatronen-dvtp-psa" title="Permanent link">&para;</a></h1>
+<p>Dit document beschrijft de belangrijkste interactiepatronen voor GBO zoals afgeleid uit de use cases. In de patronen is op verschillende plekken sprake van een "dienst"; dit kunnen standaarden of centrale of decentrale voorzieningen zijn. Daar wordt verderop in de PSA dieper op ingegaan.  </p>
+<h2 id="gegevensverzoek-van-private-partij-met-toestemming-aan-bronhouder-dvtp">Gegevensverzoek van private partij met toestemming aan bronhouder (DvTP)<a class="headerlink" href="#gegevensverzoek-van-private-partij-met-toestemming-aan-bronhouder-dvtp" title="Permanent link">&para;</a></h2>
+<h3 id="doel">Doel<a class="headerlink" href="#doel" title="Permanent link">&para;</a></h3>
+<p>Een private dienstverlener haalt gegevens op bij een bronhouder op basis van een geldige toestemming van de burger.</p>
+<h3 id="betrokken-generieke-functies">Betrokken generieke functies<a class="headerlink" href="#betrokken-generieke-functies" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Autorisatie &amp; Beleidsafdwinging</li>
+<li>Gegevensvoorziening</li>
+<li>Orkestratie &amp; Integratie</li>
+<li>Logging &amp; Verantwoording</li>
+</ul>
+<h3 id="actoren">Actoren<a class="headerlink" href="#actoren" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Private dienstverlener</li>
+<li>Integrator (optioneel)</li>
+<li>Autorisatievoorziening</li>
+<li>Consentregister</li>
+<li>Bronhouder</li>
+</ul>
+<h3 id="interactie">Interactie<a class="headerlink" href="#interactie" title="Permanent link">&para;</a></h3>
+<figure>
+
+<pre class="mermaid"><code>
+sequenceDiagram
+    actor Burger
+    participant DV as Dienstverlener&lt;br/&gt;(privaat / EU-overheid)
+    participant GBO as GBO&lt;br/&gt;toestemmingscheck + ontsluiting
+    participant Bron as Bronhouder&lt;br/&gt;overheidsbron
+    participant TR as Transformatie&lt;br/&gt;formaat afnemer
+
+    DV-&gt;&gt;Burger: 1. Vraag toestemming&lt;br/&gt;(redirect naar overheidsportaal)
+    Burger-&gt;&gt;GBO: 2. Authenticatie DigiD&lt;br/&gt;+ toestemming verlenen
+    GBO--&gt;&gt;DV: 3. Toestemmingstoken&lt;br/&gt;(OAuth 2.0 / consent token)
+
+    DV-&gt;&gt;GBO: 4. Gegevensverzoek&lt;br/&gt;+ toestemmingstoken + mTLS
+    GBO-&gt;&gt;GBO: 5. Valideer token&lt;br/&gt;(geldig? scope? TTL?)
+    GBO-&gt;&gt;Bron: 6. Ophaalverzoek&lt;br/&gt;(OAuth 2.0 · REST/GraphQL)
+    Bron--&gt;&gt;GBO: 7. Gegevens&lt;br/&gt;(gezegeld door bronhouder)
+    GBO-&gt;&gt;TR: 8. Transformeer naar&lt;br/&gt;afnemerformaat
+
+    alt DvTP (private partij)
+        TR--&gt;&gt;DV: 9a. REST/GraphQL response&lt;br/&gt;(eigen formaat)
+    else SDG/OOTS (EU overheid)
+        TR--&gt;&gt;DV: 9b. AS4 / eDelivery&lt;br/&gt;(SDG evidence format)
+    end
+</code></pre>
+
+<figcaption>Interactiepatroon Private Partij haalt gegevens op</figcaption>
+</figure>
+
+<h2 id="gegevensverzoek-van-burger-om-credential-via-wallet-te-delen">Gegevensverzoek van burger om credential via wallet te delen<a class="headerlink" href="#gegevensverzoek-van-burger-om-credential-via-wallet-te-delen" title="Permanent link">&para;</a></h2>
+<h3 id="doel_1">Doel<a class="headerlink" href="#doel_1" title="Permanent link">&para;</a></h3>
+<p>Een burger vraagt een gegeven op als credential om in zijn/haar wallet op te nemen en te delen met een dienstverlener.</p>
+<h3 id="betrokken-generieke-functies_1">Betrokken generieke functies<a class="headerlink" href="#betrokken-generieke-functies_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Autorisatie &amp; Beleidsafdwinging</li>
+<li>Gegevensvoorziening</li>
+<li>Orkestratie &amp; Integratie</li>
+<li>Logging &amp; Verantwoording</li>
+</ul>
+<h3 id="actoren_1">Actoren<a class="headerlink" href="#actoren_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Burger</li>
+<li>Dienstverlener</li>
+<li>Integrator (optioneel)</li>
+<li>Autorisatievoorziening</li>
+<li>Bronhouder</li>
+</ul>
+<h3 id="interactie_1">Interactie<a class="headerlink" href="#interactie_1" title="Permanent link">&para;</a></h3>
+<figure>
+
+<pre class="mermaid"><code>
+sequenceDiagram
+    actor Burger
+    participant Wallet as EDI-Wallet&lt;br/&gt;of portaal
+    participant GBO as GBO&lt;br/&gt;bronontsluiting
+    participant Bron as Overheidsbron
+    participant DV as Dienstverlener
+
+    Burger-&gt;&gt;Wallet: 1. Vraag attribuut op
+    Wallet-&gt;&gt;GBO: 2. Ophaalverzoek&lt;br/&gt;(OID4VCI / REST)
+    GBO-&gt;&gt;Bron: 3. Bevraag bron&lt;br/&gt;(OAuth 2.0 · API)
+    Bron--&gt;&gt;GBO: 4. Gegevens&lt;br/&gt;(gesigneerd / gezegeld)
+    GBO--&gt;&gt;Wallet: 5. Attribuut / credential&lt;br/&gt;(SD-JWT VC · ISO 18013-5)
+    Wallet--&gt;&gt;Burger: 6. Credential opgeslagen
+    Burger-&gt;&gt;DV: 7. Deel credential&lt;br/&gt;(OID4VP)
+</code></pre>
+
+<figcaption>Interactiepatroon Burger vult Wallet</figcaption>
+</figure>
+
+<h2 id="gegevensverzoek-van-europese-overheidsdienst-aan-nederlandse-overheidsbron">Gegevensverzoek van Europese overheidsdienst aan Nederlandse overheidsbron<a class="headerlink" href="#gegevensverzoek-van-europese-overheidsdienst-aan-nederlandse-overheidsbron" title="Permanent link">&para;</a></h2>
+<h3 id="doel_2">Doel<a class="headerlink" href="#doel_2" title="Permanent link">&para;</a></h3>
+<p>Een Europese overheidsdienst vraagt een gegeven (Evidence Request) aan een Nederlandse overheidsbron om een dienst aan een Nederlandse burger te kunnen leveren.</p>
+<h3 id="betrokken-generieke-functies_2">Betrokken generieke functies<a class="headerlink" href="#betrokken-generieke-functies_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Autorisatie &amp; Beleidsafdwinging</li>
+<li>Gegevensvoorziening</li>
+<li>Orkestratie &amp; Integratie</li>
+<li>Logging &amp; Verantwoording</li>
+</ul>
+<h3 id="actoren_2">Actoren<a class="headerlink" href="#actoren_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Burger</li>
+<li>Europese overheidsdienst</li>
+<li>Autorisatievoorziening</li>
+<li>Bronhouder</li>
+</ul>
+<h3 id="interactie_2">Interactie<a class="headerlink" href="#interactie_2" title="Permanent link">&para;</a></h3>
+<figure>
+
+<pre class="mermaid"><code>
+sequenceDiagram
+    autonumber
+    participant EU as EU dienst&lt;br/&gt;(SDG/OOTS)
+    participant RINIS as RINIS&lt;br/&gt;(nationaal OOTS-punt)
+    participant GBO as GBO&lt;br/&gt;(GBO voorziening)
+    participant BRG as Burger&lt;br/&gt;(rechthebbende)
+    participant BRH as Bronhouder&lt;br/&gt;(BRP / DUO / …)
+
+    rect rgb(230, 241, 251)
+        Note over EU,RINIS: ① Ontvangst OOTS-verzoek (eDelivery/AS4)
+        EU-&gt;&gt;RINIS: Evidence Request (eDelivery/AS4)
+        Note over RINIS: eDelivery → REST ontkoppeling
+    end
+
+    rect rgb(250, 238, 218)
+        Note over RINIS,GBO: ② Doorzetten naar GBO (nationaal)
+        RINIS-&gt;&gt;GBO: OOTS-payload (REST/JSON)
+    end
+
+    rect rgb(238, 237, 254)
+        Note over GBO,BRG: ③ Toestemming burger (DvTP)
+        GBO-&gt;&gt;BRG: Toestemmings-UI (DvTP)
+        BRG-&gt;&gt;GBO: Toestemming + BSN
+    end
+
+    rect rgb(250, 238, 218)
+        Note over GBO: ④ Identiteit &amp; grondslag (intern GBO)
+        Note over GBO: BSN · pseudonimisering · AVG/grondslag
+    end
+
+    rect rgb(225, 245, 238)
+        Note over GBO,BRH: ⑤ Bronontsluiting (GBO generieke API)
+        GBO-&gt;&gt;BRH: OAuth 2.0 API-aanroep (GBO-formaat)
+        BRH-&gt;&gt;GBO: Gegevens (JSON/REST)
+    end
+
+    rect rgb(250, 238, 218)
+        Note over GBO: ⑥ Semantische mapping &amp; logging (intern GBO)
+        Note over GBO: GBO-formaat → SDG Evidence type · audit log · doelbinding
+    end
+
+    rect rgb(230, 241, 251)
+        Note over GBO,EU: ⑦ Terugkoppeling via RINIS naar EU
+        GBO-&gt;&gt;RINIS: Evidence Response (REST/JSON)
+        Note over RINIS: REST → eDelivery inpakken
+        RINIS-&gt;&gt;EU: Evidence Response (AS4/eDelivery)
+    end
+</code></pre>
+
+<figcaption>Interactiepatroon gegevensverzoek Europese overheidsdienst via SDG/OOTS</figcaption>
+</figure>
+
+<h3 id="toelichting">Toelichting<a class="headerlink" href="#toelichting" title="Permanent link">&para;</a></h3>
+<p>RINIS is het nationale toegangspunt voor eDelivery en verzorgt de basisinrichting OOTS — het Nederlandse toegangspunt en de generieke koppelingen met gerelateerde systemen. Dit is een transportrol: RINIS spreekt het AS4/eDelivery-protocol richting de EC Common Services, en vertaalt dit naar een nationaal berichtformaat.<br />
+GBO is een verwerkingsrol: identiteit, grondslag, toestemming, bronontsluiting, semantiek. Dit zijn inhoudelijke functies, geen transport.  </p>
+<p>De praktische knip zit op het grenswerk tussen fase 1 en fase 2 in het diagram: RINIS ontvangt het AS4-bericht van buiten, pakt de OOTS-payload uit en geeft die als REST-aanroep door aan GBO. Bij de terugkoppeling (fase 7) geldt het omgekeerde: GBO geeft de Evidence Response terug aan RINIS, die het opnieuw inpakt in AS4 voor verzending. Bronhouders zien uitsluitend de GBO-API — OOTS-kennis is voor hen niet nodig.  </p>
+<p>NB: Openstaand architectuurvraagstuk is nog waar de OOTS-specifieke toestemmingsflow (het "preview"-scherm dat de burger het bewijsstuk laat zien vóór afgifte, verplicht per SDG-verordening) belegd wordt. Momenteel zit dit in de RINIS-basisinrichting. Als GBO de toestemming afhandelt, moeten we afspreken of het OOTS-preview-scherm bij RINIS blijft of naar GBO verschuift — dat raakt de verantwoordelijkheidsverdeling tussen de twee voorzieningen.</p>
+<h2 id="identificatie-en-authenticatie-van-een-actor">Identificatie en authenticatie van een actor<a class="headerlink" href="#identificatie-en-authenticatie-van-een-actor" title="Permanent link">&para;</a></h2>
+<h3 id="doel_3">Doel<a class="headerlink" href="#doel_3" title="Permanent link">&para;</a></h3>
+<p>Het vaststellen van de identiteit van een actor (bijv. burger of organisatie) voordat toegang wordt verleend tot functies van het stelsel.</p>
+<h3 id="betrokken-generieke-functies_3">Betrokken generieke functies<a class="headerlink" href="#betrokken-generieke-functies_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Identiteit &amp; Vertrouwen</li>
+<li>Toegang &amp; Interactie</li>
+<li>Autorisatie &amp; Beleidsafdwinging</li>
+</ul>
+<h3 id="actoren_3">Actoren<a class="headerlink" href="#actoren_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Burger</li>
+<li>Private dienstverlener</li>
+<li>Identiteitsdienst</li>
+<li>GBO‑stelsel</li>
+</ul>
+<h3 id="interactie_3">Interactie<a class="headerlink" href="#interactie_3" title="Permanent link">&para;</a></h3>
+<figure>
+
+<pre class="mermaid"><code>
+sequenceDiagram
+actor Burger
+participant PD as Private dienstverlener
+participant TI as Toegang &amp; Interactie
+participant ID as Identiteit &amp; Vertrouwen
+participant AUTH as Autorisatie
+
+Burger -&gt;&gt; PD: Start dienst
+PD -&gt;&gt; TI: Start toestemmingsflow
+TI -&gt;&gt; ID: Authenticatieverzoek
+ID -&gt;&gt; Burger: Vraag authenticatiemiddel
+Burger -&gt;&gt; ID: Authenticatie
+ID -&gt;&gt; TI: Identiteitsassertie
+TI -&gt;&gt; AUTH: Controle toegangsregels
+AUTH -&gt;&gt; TI: Toegang toegestaan
+TI -&gt;&gt; PD: Authenticatie geslaagd
+</code></pre>
+
+<figcaption>Interactiepatroon identificatie en authenticatie actor</figcaption>
+</figure>
+
+<h2 id="toestemming-geven-en-registreren">Toestemming geven en registreren<a class="headerlink" href="#toestemming-geven-en-registreren" title="Permanent link">&para;</a></h2>
+<h3 id="doel_4">Doel<a class="headerlink" href="#doel_4" title="Permanent link">&para;</a></h3>
+<p>Een burger geeft expliciete toestemming voor het delen van een specifieke dataset met een specifieke private dienstverlener.</p>
+<h3 id="betrokken-generieke-functies_4">Betrokken generieke functies<a class="headerlink" href="#betrokken-generieke-functies_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Toegang &amp; Interactie</li>
+<li>Identiteit &amp; Vertrouwen</li>
+<li>Gebruik &amp; Juridische grondslag</li>
+<li>Gegevensvoorziening</li>
+</ul>
+<h3 id="actoren_4">Actoren<a class="headerlink" href="#actoren_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Burger</li>
+<li>Private dienstverlener</li>
+<li>Toestemmingsdienst</li>
+<li>Consentregister</li>
+</ul>
+<h3 id="interactie_4">Interactie<a class="headerlink" href="#interactie_4" title="Permanent link">&para;</a></h3>
+<figure>
+
+<pre class="mermaid"><code>
+sequenceDiagram
+actor Burger
+participant PD as Private dienstverlener
+participant TI as Toegang &amp; Interactie
+participant ID as Identiteit &amp; Vertrouwen
+participant CONSENT as Toestemmingsdienst
+participant REG as Consentregister
+
+Burger -&gt;&gt; PD: Start dienst
+PD -&gt;&gt; TI: Initiatie toestemmingsflow
+TI -&gt;&gt; ID: Authenticatie
+ID -&gt;&gt; TI: Identiteit bevestigd
+TI -&gt;&gt; CONSENT: Toon toestemmingsinformatie
+CONSENT -&gt;&gt; Burger: Toon dataset / doel / partij
+Burger -&gt;&gt; CONSENT: Geef toestemming
+CONSENT -&gt;&gt; REG: Registreer toestemming
+REG -&gt;&gt; CONSENT: Bevestiging
+CONSENT -&gt;&gt; PD: Terugkoppeling resultaat
+</code></pre>
+
+<figcaption>Interactiepatroon toestemming geven</figcaption>
+</figure>
+
+<h2 id="toestemming-beheren-of-intrekken">Toestemming beheren of intrekken<a class="headerlink" href="#toestemming-beheren-of-intrekken" title="Permanent link">&para;</a></h2>
+<h3 id="doel_5">Doel<a class="headerlink" href="#doel_5" title="Permanent link">&para;</a></h3>
+<p>De burger kan een eerder gegeven toestemming bekijken en intrekken.</p>
+<h3 id="betrokken-generieke-functies_5">Betrokken generieke functies<a class="headerlink" href="#betrokken-generieke-functies_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Toegang &amp; Interactie</li>
+<li>Gebruik &amp; Juridische grondslag</li>
+<li>Logging &amp; Verantwoording</li>
+</ul>
+<h3 id="actoren_5">Actoren<a class="headerlink" href="#actoren_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Burger</li>
+<li>Toestemmingsvoorziening</li>
+<li>Consentregister</li>
+</ul>
+<h3 id="interactie_5">Interactie<a class="headerlink" href="#interactie_5" title="Permanent link">&para;</a></h3>
+<figure>
+
+<pre class="mermaid"><code>
+sequenceDiagram
+actor Burger
+participant TI as Toegang &amp; Interactie
+participant CONSENT as Toestemmingsdienst
+participant REG as Consentregister
+
+Burger -&gt;&gt; TI: Open overzicht toestemmingen
+TI -&gt;&gt; CONSENT: Vraag consentlijst
+CONSENT -&gt;&gt; REG: Lees consentgegevens
+REG -&gt;&gt; CONSENT: Consentlijst
+CONSENT -&gt;&gt; Burger: Toon overzicht
+
+Burger -&gt;&gt; CONSENT: Trek toestemming in
+CONSENT -&gt;&gt; REG: Update status (geannuleerd)
+REG -&gt;&gt; CONSENT: Bevestiging
+CONSENT -&gt;&gt; Burger: Intrekking bevestigd
+</code></pre>
+
+<figcaption>Interactiepatroon toestemming intrekken</figcaption>
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>
