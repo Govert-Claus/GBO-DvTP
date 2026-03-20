@@ -3,7 +3,7 @@
 ## Doel van dit document
 
 Dit document beschrijft de Project Start Architectuur (PSA) voor het
-programma **GBO**.
+programma **GBO** (**G**emeenschappelijke **B**ron**O**ntsluiting).
 
 De PSA beschrijft **wat de oplossing moet kunnen**, maar legt nog geen technische implementatie vast.
 
@@ -12,19 +12,22 @@ De PSA beschrijft **wat de oplossing moet kunnen**, maar legt nog geen technisch
 
 De PSA beschrijft de architectuur voor een generieke infrastructuur waarmee:
 
--   burgers gegevens van overheidsorganisaties kunnen verkrijgen
--   burgers deze gegevens kunnen delen met private partijen
--   gegevens gebruikt kunnen worden voor Europese toepassingen zoals **EDI Wallet** en **SDG/OOTS**
+-   burgers gegevens van overheidsorganisaties kunnen verkrijgen  
+-   burgers deze gegevens kunnen delen met private partijen  
+-   gegevens gebruikt kunnen worden voor Europese toepassingen zoals **EDI Wallet** en **SDG/OOTS**  
 
 De PSA omvat:
-- generieke functies  
-- capabilities  
-- architectuurkaders  
 
-De PSA beschrijft niet:  
-- concrete technische oplossingen  
-- implementaties van componenten  
-- leverancierskeuzes  
+-   architectuur- en ontwerpprincipes  
+-   generieke functies  
+-   capabilities  
+-   realisatiestrategie
+
+De PSA beschrijft **niet**:
+
+-   concrete technische oplossingen  
+-   implementaties van componenten  
+-   leverancierskeuzes  
 
 
 ## Relatie met andere architecturen
